@@ -1,0 +1,755 @@
+{
+  "total": 91,
+  "version": "photo-polish-2026-05-08",
+  "generatedAt": "2026-05-08",
+  "generator": "scripts/generate-photos.py",
+  "note": "Photorealistic AI-generated finished-project photos via Pollinations AI, polished for warmer color and clearer details. Can be replaced with real community photos later.",
+  "categories": {
+    "Yarn": [
+      {
+        "title": "Chunky Crochet Heart",
+        "slug": "chunky-crochet-heart",
+        "patternPage": "patterns/chunky-crochet-heart.html",
+        "file": "assets/product-photos/chunky-crochet-heart.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Beginner Granny Square",
+        "slug": "beginner-granny-square",
+        "patternPage": "patterns/beginner-granny-square.html",
+        "file": "assets/product-photos/beginner-granny-square.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Soft Yarn Bookmark",
+        "slug": "soft-yarn-bookmark",
+        "patternPage": "patterns/soft-yarn-bookmark.html",
+        "file": "assets/product-photos/soft-yarn-bookmark.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Macramé Keychain Loop",
+        "slug": "macrame-keychain-loop",
+        "patternPage": "patterns/macram-keychain-loop.html",
+        "file": "assets/product-photos/macrame-keychain-loop.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Tiny Knit Coaster",
+        "slug": "tiny-knit-coaster",
+        "patternPage": "patterns/tiny-knit-coaster.html",
+        "file": "assets/product-photos/tiny-knit-coaster.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Pom-Pom Flower",
+        "slug": "pom-pom-flower",
+        "patternPage": "patterns/pom-pom-flower.html",
+        "file": "assets/product-photos/pom-pom-flower.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Crochet Cup Cozy",
+        "slug": "crochet-cup-cozy",
+        "patternPage": "patterns/crochet-cup-cozy.html",
+        "file": "assets/product-photos/crochet-cup-cozy.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Crochet Plant Pot Cover",
+        "slug": "crochet-plant-pot-cover",
+        "patternPage": "patterns/crochet-plant-pot-cover.html",
+        "file": "assets/product-photos/crochet-plant-pot-cover.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Braided Yarn Bracelet",
+        "slug": "braided-yarn-bracelet",
+        "patternPage": "patterns/braided-yarn-bracelet.html",
+        "file": "assets/product-photos/braided-yarn-bracelet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Mini Tassel Garland",
+        "slug": "mini-tassel-garland",
+        "patternPage": "patterns/mini-tassel-garland.html",
+        "file": "assets/product-photos/mini-tassel-garland.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Simple Yarn Wrapped Letter",
+        "slug": "simple-yarn-wrapped-letter",
+        "patternPage": "patterns/simple-yarn-wrapped-letter.html",
+        "file": "assets/product-photos/simple-yarn-wrapped-letter.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Painting": [
+      {
+        "title": "Kindness Painted Pebble",
+        "slug": "kindness-painted-pebble",
+        "patternPage": "patterns/kindness-painted-pebble.html",
+        "file": "assets/product-photos/kindness-painted-pebble.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Watercolor Bloom Card",
+        "slug": "watercolor-bloom-card",
+        "patternPage": "patterns/watercolor-bloom-card.html",
+        "file": "assets/product-photos/watercolor-bloom-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Acrylic Dot Rainbow",
+        "slug": "acrylic-dot-rainbow",
+        "patternPage": "patterns/acrylic-dot-rainbow.html",
+        "file": "assets/product-photos/acrylic-dot-rainbow.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Painted Jar Lantern",
+        "slug": "painted-jar-lantern",
+        "patternPage": "patterns/painted-jar-lantern.html",
+        "file": "assets/product-photos/painted-jar-lantern.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Ceramic Mug Practice Motif",
+        "slug": "ceramic-mug-practice-motif",
+        "patternPage": "patterns/ceramic-mug-practice-motif.html",
+        "file": "assets/product-photos/ceramic-mug-practice-motif.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Glass Window Flower Cling",
+        "slug": "glass-window-flower-cling",
+        "patternPage": "patterns/glass-window-flower-cling.html",
+        "file": "assets/product-photos/glass-window-flower-cling.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Wood Slice Mini Painting",
+        "slug": "wood-slice-mini-painting",
+        "patternPage": "patterns/wood-slice-mini-painting.html",
+        "file": "assets/product-photos/wood-slice-mini-painting.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Painted Plant Pot Band",
+        "slug": "painted-plant-pot-band",
+        "patternPage": "patterns/painted-plant-pot-band.html",
+        "file": "assets/product-photos/painted-plant-pot-band.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Sunset Color Swatch",
+        "slug": "sunset-color-swatch",
+        "patternPage": "patterns/sunset-color-swatch.html",
+        "file": "assets/product-photos/sunset-color-swatch.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Teal Flower Thank-You Tag",
+        "slug": "teal-flower-thank-you-tag",
+        "patternPage": "patterns/teal-flower-thank-you-tag.html",
+        "file": "assets/product-photos/teal-flower-thank-you-tag.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Sewing": [
+      {
+        "title": "Sweet Patch Pocket",
+        "slug": "sweet-patch-pocket",
+        "patternPage": "patterns/sweet-patch-pocket.html",
+        "file": "assets/product-photos/sweet-patch-pocket.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Felt Heart Ornament",
+        "slug": "felt-heart-ornament",
+        "patternPage": "patterns/felt-heart-ornament.html",
+        "file": "assets/product-photos/felt-heart-ornament.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Scrap Fabric Bookmark",
+        "slug": "scrap-fabric-bookmark",
+        "patternPage": "patterns/scrap-fabric-bookmark.html",
+        "file": "assets/product-photos/scrap-fabric-bookmark.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Beginner Drawstring Pouch",
+        "slug": "beginner-drawstring-pouch",
+        "patternPage": "patterns/beginner-drawstring-pouch.html",
+        "file": "assets/product-photos/beginner-drawstring-pouch.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Tiny Lavender Sachet",
+        "slug": "tiny-lavender-sachet",
+        "patternPage": "patterns/tiny-lavender-sachet.html",
+        "file": "assets/product-photos/tiny-lavender-sachet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Embroidered Name Patch",
+        "slug": "embroidered-name-patch",
+        "patternPage": "patterns/embroidered-name-patch.html",
+        "file": "assets/product-photos/embroidered-name-patch.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Simple Button Flower",
+        "slug": "simple-button-flower",
+        "patternPage": "patterns/simple-button-flower.html",
+        "file": "assets/product-photos/simple-button-flower.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Fabric Scrap Coaster",
+        "slug": "fabric-scrap-coaster",
+        "patternPage": "patterns/fabric-scrap-coaster.html",
+        "file": "assets/product-photos/fabric-scrap-coaster.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Hand-Stitched Mini Pillow",
+        "slug": "hand-stitched-mini-pillow",
+        "patternPage": "patterns/hand-stitched-mini-pillow.html",
+        "file": "assets/product-photos/hand-stitched-mini-pillow.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "No-Waste Gift Bow",
+        "slug": "no-waste-gift-bow",
+        "patternPage": "patterns/no-waste-gift-bow.html",
+        "file": "assets/product-photos/no-waste-gift-bow.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Drawing": [
+      {
+        "title": "Tiny Doodle Garden",
+        "slug": "tiny-doodle-garden",
+        "patternPage": "patterns/tiny-doodle-garden.html",
+        "file": "assets/product-photos/tiny-doodle-garden.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Kindness Quote Border",
+        "slug": "kindness-quote-border",
+        "patternPage": "patterns/kindness-quote-border.html",
+        "file": "assets/product-photos/kindness-quote-border.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Five-Minute Flower Study",
+        "slug": "five-minute-flower-study",
+        "patternPage": "patterns/five-minute-flower-study.html",
+        "file": "assets/product-photos/five-minute-flower-study.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Cozy Craft Room Sketch",
+        "slug": "cozy-craft-room-sketch",
+        "patternPage": "patterns/cozy-craft-room-sketch.html",
+        "file": "assets/product-photos/cozy-craft-room-sketch.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Beginner Mandala Circle",
+        "slug": "beginner-mandala-circle",
+        "patternPage": "patterns/beginner-mandala-circle.html",
+        "file": "assets/product-photos/beginner-mandala-circle.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Little Hippo Practice Page",
+        "slug": "little-hippo-practice-page",
+        "patternPage": "patterns/little-hippo-practice-page.html",
+        "file": "assets/product-photos/little-hippo-practice-page.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Leaf Pattern Sampler",
+        "slug": "leaf-pattern-sampler",
+        "patternPage": "patterns/leaf-pattern-sampler.html",
+        "file": "assets/product-photos/leaf-pattern-sampler.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Happy House Doodle",
+        "slug": "happy-house-doodle",
+        "patternPage": "patterns/happy-house-doodle.html",
+        "file": "assets/product-photos/happy-house-doodle.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Patterned Heart Sheet",
+        "slug": "patterned-heart-sheet",
+        "patternPage": "patterns/patterned-heart-sheet.html",
+        "file": "assets/product-photos/patterned-heart-sheet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Daily Tiny Object Prompt",
+        "slug": "daily-tiny-object-prompt",
+        "patternPage": "patterns/daily-tiny-object-prompt.html",
+        "file": "assets/product-photos/daily-tiny-object-prompt.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Wood": [
+      {
+        "title": "Little Twig Star",
+        "slug": "little-twig-star",
+        "patternPage": "patterns/little-twig-star.html",
+        "file": "assets/product-photos/little-twig-star.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Painted Wood Slice Tag",
+        "slug": "painted-wood-slice-tag",
+        "patternPage": "patterns/painted-wood-slice-tag.html",
+        "file": "assets/product-photos/painted-wood-slice-tag.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Pallet Scrap Mini Sign",
+        "slug": "pallet-scrap-mini-sign",
+        "patternPage": "patterns/pallet-scrap-mini-sign.html",
+        "file": "assets/product-photos/pallet-scrap-mini-sign.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Twig Photo Holder",
+        "slug": "twig-photo-holder",
+        "patternPage": "patterns/twig-photo-holder.html",
+        "file": "assets/product-photos/twig-photo-holder.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Simple Branch Mobile",
+        "slug": "simple-branch-mobile",
+        "patternPage": "patterns/simple-branch-mobile.html",
+        "file": "assets/product-photos/simple-branch-mobile.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Wood Bead Garland",
+        "slug": "wood-bead-garland",
+        "patternPage": "patterns/wood-bead-garland.html",
+        "file": "assets/product-photos/wood-bead-garland.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Rustic Plant Marker",
+        "slug": "rustic-plant-marker",
+        "patternPage": "patterns/rustic-plant-marker.html",
+        "file": "assets/product-photos/rustic-plant-marker.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Tiny Driftwood Boat",
+        "slug": "tiny-driftwood-boat",
+        "patternPage": "patterns/tiny-driftwood-boat.html",
+        "file": "assets/product-photos/tiny-driftwood-boat.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Scrap Wood Coaster",
+        "slug": "scrap-wood-coaster",
+        "patternPage": "patterns/scrap-wood-coaster.html",
+        "file": "assets/product-photos/scrap-wood-coaster.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Nature Stick Loom",
+        "slug": "nature-stick-loom",
+        "patternPage": "patterns/nature-stick-loom.html",
+        "file": "assets/product-photos/nature-stick-loom.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Jewelry": [
+      {
+        "title": "Friendship Bead Bracelet",
+        "slug": "friendship-bead-bracelet",
+        "patternPage": "patterns/friendship-bead-bracelet.html",
+        "file": "assets/product-photos/friendship-bead-bracelet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Simple Cord Necklace",
+        "slug": "simple-cord-necklace",
+        "patternPage": "patterns/simple-cord-necklace.html",
+        "file": "assets/product-photos/simple-cord-necklace.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Stretch Ring Stack",
+        "slug": "stretch-ring-stack",
+        "patternPage": "patterns/stretch-ring-stack.html",
+        "file": "assets/product-photos/stretch-ring-stack.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Charm Safety-Pin Brooch",
+        "slug": "charm-safety-pin-brooch",
+        "patternPage": "patterns/charm-safety-pin-brooch.html",
+        "file": "assets/product-photos/charm-safety-pin-brooch.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Macramé Wish Bracelet",
+        "slug": "macrame-wish-bracelet",
+        "patternPage": "patterns/macram-wish-bracelet.html",
+        "file": "assets/product-photos/macrame-wish-bracelet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Paper Bead Necklace",
+        "slug": "paper-bead-necklace",
+        "patternPage": "patterns/paper-bead-necklace.html",
+        "file": "assets/product-photos/paper-bead-necklace.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Button Bracelet",
+        "slug": "button-bracelet",
+        "patternPage": "patterns/button-bracelet.html",
+        "file": "assets/product-photos/button-bracelet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Clay-Look Bead Charm",
+        "slug": "clay-look-bead-charm",
+        "patternPage": "patterns/clay-look-bead-charm.html",
+        "file": "assets/product-photos/clay-look-bead-charm.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Tiny Tassel Earrings",
+        "slug": "tiny-tassel-earrings",
+        "patternPage": "patterns/tiny-tassel-earrings.html",
+        "file": "assets/product-photos/tiny-tassel-earrings.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Memory Color Anklet",
+        "slug": "memory-color-anklet",
+        "patternPage": "patterns/memory-color-anklet.html",
+        "file": "assets/product-photos/memory-color-anklet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Soap": [
+      {
+        "title": "Sweet Soap Wrap",
+        "slug": "sweet-soap-wrap",
+        "patternPage": "patterns/sweet-soap-wrap.html",
+        "file": "assets/product-photos/sweet-soap-wrap.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Simple Soap Gift Band",
+        "slug": "simple-soap-gift-band",
+        "patternPage": "patterns/simple-soap-gift-band.html",
+        "file": "assets/product-photos/simple-soap-gift-band.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Dried Flower Soap Tag",
+        "slug": "dried-flower-soap-tag",
+        "patternPage": "patterns/dried-flower-soap-tag.html",
+        "file": "assets/product-photos/dried-flower-soap-tag.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Beginner Melt-and-Pour Heart",
+        "slug": "beginner-melt-and-pour-heart",
+        "patternPage": "patterns/beginner-melt-and-pour-heart.html",
+        "file": "assets/product-photos/beginner-melt-and-pour-heart.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Soap Sample Envelope",
+        "slug": "soap-sample-envelope",
+        "patternPage": "patterns/soap-sample-envelope.html",
+        "file": "assets/product-photos/soap-sample-envelope.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Kindness Scent Label",
+        "slug": "kindness-scent-label",
+        "patternPage": "patterns/kindness-scent-label.html",
+        "file": "assets/product-photos/kindness-scent-label.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Mini Soap Basket",
+        "slug": "mini-soap-basket",
+        "patternPage": "patterns/mini-soap-basket.html",
+        "file": "assets/product-photos/mini-soap-basket.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Washcloth Soap Pocket",
+        "slug": "washcloth-soap-pocket",
+        "patternPage": "patterns/washcloth-soap-pocket.html",
+        "file": "assets/product-photos/washcloth-soap-pocket.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Color Swirl Practice Bar",
+        "slug": "color-swirl-practice-bar",
+        "patternPage": "patterns/color-swirl-practice-bar.html",
+        "file": "assets/product-photos/color-swirl-practice-bar.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Spa Night Gift Sleeve",
+        "slug": "spa-night-gift-sleeve",
+        "patternPage": "patterns/spa-night-gift-sleeve.html",
+        "file": "assets/product-photos/spa-night-gift-sleeve.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Candles": [
+      {
+        "title": "Cozy Candle Label",
+        "slug": "cozy-candle-label",
+        "patternPage": "patterns/cozy-candle-label.html",
+        "file": "assets/product-photos/cozy-candle-label.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Safety Gift Tag",
+        "slug": "safety-gift-tag",
+        "patternPage": "patterns/safety-gift-tag.html",
+        "file": "assets/product-photos/safety-gift-tag.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Jar Candle Wrap Band",
+        "slug": "jar-candle-wrap-band",
+        "patternPage": "patterns/jar-candle-wrap-band.html",
+        "file": "assets/product-photos/jar-candle-wrap-band.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Pressed-Flower Jar Collar",
+        "slug": "pressed-flower-jar-collar",
+        "patternPage": "patterns/pressed-flower-jar-collar.html",
+        "file": "assets/product-photos/pressed-flower-jar-collar.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Cozy Scent Name Card",
+        "slug": "cozy-scent-name-card",
+        "patternPage": "patterns/cozy-scent-name-card.html",
+        "file": "assets/product-photos/cozy-scent-name-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Tea-Light Paper Tray",
+        "slug": "tea-light-paper-tray",
+        "patternPage": "patterns/tea-light-paper-tray.html",
+        "file": "assets/product-photos/tea-light-paper-tray.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Candle Care Mini Card",
+        "slug": "candle-care-mini-card",
+        "patternPage": "patterns/candle-care-mini-card.html",
+        "file": "assets/product-photos/candle-care-mini-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Ribbon-Wrapped Candle Gift",
+        "slug": "ribbon-wrapped-candle-gift",
+        "patternPage": "patterns/ribbon-wrapped-candle-gift.html",
+        "file": "assets/product-photos/ribbon-wrapped-candle-gift.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Seasonal Candle Sticker",
+        "slug": "seasonal-candle-sticker",
+        "patternPage": "patterns/seasonal-candle-sticker.html",
+        "file": "assets/product-photos/seasonal-candle-sticker.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Kindness Glow Gift Set",
+        "slug": "kindness-glow-gift-set",
+        "patternPage": "patterns/kindness-glow-gift-set.html",
+        "file": "assets/product-photos/kindness-glow-gift-set.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ],
+    "Cards": [
+      {
+        "title": "Thank-You Flower Card",
+        "slug": "thank-you-flower-card",
+        "patternPage": "patterns/thank-you-flower-card.html",
+        "file": "assets/product-photos/thank-you-flower-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Pop-Up Heart Card",
+        "slug": "pop-up-heart-card",
+        "patternPage": "patterns/pop-up-heart-card.html",
+        "file": "assets/product-photos/pop-up-heart-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Scrap Paper Rainbow Card",
+        "slug": "scrap-paper-rainbow-card",
+        "patternPage": "patterns/scrap-paper-rainbow-card.html",
+        "file": "assets/product-photos/scrap-paper-rainbow-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Beginner Birthday Banner Card",
+        "slug": "beginner-birthday-banner-card",
+        "patternPage": "patterns/beginner-birthday-banner-card.html",
+        "file": "assets/product-photos/beginner-birthday-banner-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Kindness Pocket Note",
+        "slug": "kindness-pocket-note",
+        "patternPage": "patterns/kindness-pocket-note.html",
+        "file": "assets/product-photos/kindness-pocket-note.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Pressed-Leaf Card",
+        "slug": "pressed-leaf-card",
+        "patternPage": "patterns/pressed-leaf-card.html",
+        "file": "assets/product-photos/pressed-leaf-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Washi Tape Frame Card",
+        "slug": "washi-tape-frame-card",
+        "patternPage": "patterns/washi-tape-frame-card.html",
+        "file": "assets/product-photos/washi-tape-frame-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Mini Envelope Set",
+        "slug": "mini-envelope-set",
+        "patternPage": "patterns/mini-envelope-set.html",
+        "file": "assets/product-photos/mini-envelope-set.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Painted Dot Greeting Card",
+        "slug": "painted-dot-greeting-card",
+        "patternPage": "patterns/painted-dot-greeting-card.html",
+        "file": "assets/product-photos/painted-dot-greeting-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Crafties Welcome Card",
+        "slug": "crafties-welcome-card",
+        "patternPage": "patterns/crafties-welcome-card.html",
+        "file": "assets/product-photos/crafties-welcome-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      }
+    ]
+  }
+}
