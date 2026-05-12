@@ -50,18 +50,19 @@ Crafties/
 
 ## 🚀 Deploy to Netlify
 
-This repo is linked to the live Crafties site at https://teamcrafties.com.
+This repo is locally linked to the live Crafties site at https://teamcrafties.com.
 
-Current deployment flow:
+Current verified deployment flow:
 
-1. Push changes to `main`
-2. GitHub Actions triggers the Netlify production deploy hook
+1. Make changes in this repo
+2. Run `netlify deploy --prod --dir .` from the project root
 3. Netlify publishes the updated static site
 
 Useful notes:
 - Publish directory: `.` (root)
 - Build command: none needed — it's pure HTML/CSS/JS
-- Local/manual fallback: `netlify deploy --prod --dir .`
+- `netlify status` should show project `team-crafties`
+- Native Git-triggered Netlify builds can be added later from the Netlify dashboard or with a dedicated Netlify auth token
 
 You can still drag-and-drop the entire folder to [netlify.com/drop](https://app.netlify.com/drop) for a one-off preview deploy.
 
