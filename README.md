@@ -50,13 +50,20 @@ Crafties/
 
 ## 🚀 Deploy to Netlify
 
-1. Push this folder to a GitHub repo
-2. Connect the repo in [Netlify](https://app.netlify.com)
-3. Build settings: none needed — it's pure HTML/CSS/JS
-4. Publish directory: `.` (root)
-5. Click Deploy! 🎉
+This repo is linked to the live Crafties site at https://teamcrafties.com.
 
-Or drag-and-drop the entire folder to [netlify.com/drop](https://app.netlify.com/drop) for instant deployment.
+Current deployment flow:
+
+1. Push changes to `main`
+2. GitHub Actions triggers the Netlify production deploy hook
+3. Netlify publishes the updated static site
+
+Useful notes:
+- Publish directory: `.` (root)
+- Build command: none needed — it's pure HTML/CSS/JS
+- Local/manual fallback: `netlify deploy --prod --dir .`
+
+You can still drag-and-drop the entire folder to [netlify.com/drop](https://app.netlify.com/drop) for a one-off preview deploy.
 
 ## 🖼️ Regenerating Photo Previews
 
