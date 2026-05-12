@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — Team Crafties</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 12% 10%,rgba(255,246,92,.42),transparent 28%),radial-gradient(circle at 88% 16%,rgba(34,215,165,.28),transparent 26%),linear-gradient(135deg,#fffdf8,#ffe5f4 45%,#ddfff8);font-family:Nunito,Arial,sans-serif;color:#321441;padding:24px}
+    .card{max-width:840px;background:#fff;border:4px solid #9b3dff;border-radius:36px;padding:32px;box-shadow:0 22px 60px rgba(83,19,143,.18);text-align:center}
+    h1{font-family:Chewy,cursive;color:#53138f;font-size:clamp(2.4rem,8vw,4.8rem);line-height:.95;margin:0 0 12px;text-shadow:0 3px 0 #fff65c}
+    h2{font-family:Chewy,cursive;color:#53138f;font-size:clamp(1.8rem,5vw,2.7rem);margin:26px 0 10px}
+    p{font-size:1.15rem;line-height:1.6;font-weight:900;color:#5f4770}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0;text-align:left}
+    .step{background:linear-gradient(145deg,#fffdf8,#f0fff9);border:2px solid rgba(83,19,143,.18);border-radius:24px;padding:16px;box-shadow:0 8px 20px rgba(83,19,143,.08)}
+    .step strong{display:block;color:#53138f;font-size:1.05rem;margin-bottom:6px}
+    .step span{display:block;color:#6d4b76;font-weight:900;line-height:1.4}
+    .note{background:#fff8cf;border:2px dashed #9b3dff;border-radius:24px;padding:14px 16px;margin:18px 0;color:#53138f}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+    a{display:inline-block;background:#fff65c;border:3px solid #53138f;border-radius:999px;color:#53138f;text-decoration:none;font-weight:900;padding:12px 18px;box-shadow:0 7px 0 rgba(83,19,143,.16)}
+    a.secondary{background:#fff;color:#53138f}
+    @media(max-width:720px){.steps{grid-template-columns:1fr}.card{padding:24px}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Thank you, maker! 💜</h1>
+    <p>Your Team Crafties gallery submission was sent to the private review queue. Nothing is published automatically — the purple hippo checks kindness first.</p>
+    <h2>What happens next?</h2>
+    <div class="steps" aria-label="Team Crafties review steps">
+      <div class="step"><strong>1 · Private review</strong><span>Nath / Team Crafties checks the photo, note, consent, and maker name.</span></div>
+      <div class="step"><strong>2 · Gentle follow-up</strong><span>If anything needs a tiny clarification, Team Crafties may email before sharing.</span></div>
+      <div class="step"><strong>3 · Approved gallery</strong><span>Only reviewed and approved projects may appear on the public gallery wall.</span></div>
+    </div>
+    <p class="note">Submitting does not create an account, open comments, or publish your photo automatically. Kindness and consent come first.</p>
+    <div class="actions">
+      <a href="/#gallery">See the approved gallery</a>
+      <a class="secondary" href="/">Back to Team Crafties</a>
+    </div>
+  </main>
+</body>
+</html>

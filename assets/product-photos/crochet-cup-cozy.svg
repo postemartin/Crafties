@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+<title id="title">Finished Crochet Cup Cozy project preview</title>
+<desc id="desc">A large clear Crafties finished-project preview illustration for the Yarn pattern Crochet Cup Cozy, styled as a photographed craft on a tabletop card with texture, shadows, and highlights.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset=".42" stop-color="#f4b4ff"/><stop offset="1" stop-color="#efe0ff"/></linearGradient>
+  <linearGradient id="table" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fff8df"/><stop offset="1" stop-color="#f0d7ff"/></linearGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="82"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .07"/></feComponentTransfer></filter>
+  <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#53138f" flood-opacity=".18"/></filter>
+  <filter id="objectShadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="24" stdDeviation="18" flood-color="#321441" flood-opacity=".28"/></filter>
+</defs>
+<rect width="900" height="680" rx="72" fill="url(#table)"/>
+<rect width="900" height="680" rx="72" fill="url(#bg)" opacity=".74"/>
+<rect width="900" height="680" rx="72" filter="url(#grain)" opacity=".9"/>
+<ellipse cx="454" cy="580" rx="330" ry="48" fill="#53138f" opacity=".14"/>
+<rect x="84" y="58" width="732" height="550" rx="64" fill="#fffdf8" stroke="#ffffff" stroke-width="16" filter="url(#cardShadow)"/>
+<path d="M142 124h604" stroke="#f1d6ff" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+<path d="M154 536h592" stroke="#fff65c" stroke-width="20" stroke-linecap="round" opacity=".64"/>
+<circle cx="132" cy="122" r="34" fill="#fff65c" opacity=".96"/>
+<circle cx="768" cy="142" r="25" fill="#22d7a5" opacity=".52"/>
+<circle cx="738" cy="504" r="34" fill="#ff4fa3" opacity=".2"/>
+<g filter="url(#objectShadow)"><rect x="302" y="210" width="254" height="224" rx="46" fill="#f4b4ff" stroke="#53138f" stroke-width="16"/><path d="M314 292h228M314 358h228" stroke="#fff" stroke-width="15" stroke-linecap="round"/><path d="M557 272h46c48 0 48 104 0 104h-46" fill="none" stroke="#53138f" stroke-width="19"/><rect x="342" y="248" width="174" height="64" rx="26" fill="#ff4fa3" opacity=".72"/></g>
+<rect x="116" y="35" width="332" height="62" rx="31" fill="#53138f" opacity=".96"/>
+<text x="282" y="75" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="22" font-weight="900" fill="#fff">🧶 Finished project</text>
+<rect x="540" y="35" width="252" height="62" rx="31" fill="#fff65c" stroke="#53138f" stroke-width="5"/>
+<text x="666" y="74" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="20" font-weight="900" fill="#53138f">Crafties preview</text>
+<rect x="270" y="598" width="360" height="46" rx="23" fill="#ffffff" opacity=".92"/>
+<text x="450" y="628" text-anchor="middle" font-family="Verdana,Arial,sans-serif" font-size="22" font-weight="900" fill="#321441">Crochet Cup Cozy</text>
+</svg>
