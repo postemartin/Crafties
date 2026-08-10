@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Netlify form registration for Team Crafties</title>
+</head>
+<body>
+  <!-- Static hidden form so Netlify reliably detects the Team Crafties join inbox on deploy. -->
+  <form name="team-crafties-join" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="team-crafties-join" />
+    <input name="bot-field" />
+    <input name="maker_name" type="text" />
+    <input name="email" type="email" />
+    <input name="craft_interest" type="text" />
+    <textarea name="note"></textarea>
+    <input name="welcome_updates" type="text" />
+    <input name="kindness_rules_agreed" type="text" />
+    <input name="source" type="text" />
+    <input name="referrer" type="text" />
+    <input name="page" type="text" />
+    <input name="language" type="text" />
+  </form>
+
+  <!-- Static hidden form so Netlify detects the Ask ❓ Questions inbox on deploy. -->
+  <form name="team-crafties-chat-question" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="team-crafties-chat-question" />
+    <input name="bot-field" />
+    <input name="maker_name" type="text" />
+    <input name="email" type="email" />
+    <input name="answer_notification_requested" type="text" />
+    <input name="topic" type="text" />
+    <input name="question_language" type="text" />
+    <textarea name="question"></textarea>
+    <input name="kindness_rules_agreed" type="text" />
+    <input name="source" type="text" />
+    <input name="page" type="text" />
+    <input name="language" type="text" />
+  </form>
+  <script defer src="assets/js/analytics.js?v=20260514b"></script>
+</body>
+</html>

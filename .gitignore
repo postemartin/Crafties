@@ -6,3 +6,15 @@
 
 # local scratch/backups
 assets/backup-*/
+.crafties-toolkit/
+
+# project-local Hermes runtime (NOT part of the published site)
+.hermes/
+.hermes_tmp_extracted_hippo.txt
+
+# node + npm artifacts (Crafties has no npm runtime deps)
+node_modules/
+package-lock.json
+
+# scratch photo backups
+assets/product-photos/backups/

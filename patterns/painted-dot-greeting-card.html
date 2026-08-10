@@ -1,66 +1,142 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Painted Dot Greeting Card — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
-:root{--ink:#321441;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.18)}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Patrick Hand","Comic Sans MS",cursive;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.22),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.2),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#ffe7f3)}
-.wrap{width:min(920px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}
-.hero{background:linear-gradient(145deg,#fffdf8,#ffe5f4 44%,#e9ddff);border:4px solid var(--rose);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.logo{width:min(210px,34vw);border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.25rem;line-height:1.55;color:#67466c}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.12rem;line-height:1.35}.tip{background:#e2fff4;border:3px solid var(--mint);border-radius:28px;padding:18px;font-weight:950;color:#07583f;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font:950 1.05rem "Patrick Hand",cursive;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573}@media(max-width:720px){.hero,.grid{grid-template-columns:1fr}.logo{width:180px}.top{align-items:flex-start}.brand span{font-size:1.8rem}}@media print{body{background:white}.top,.actions,footer{display:none}.hero,.box,.tip{box-shadow:none}.wrap{width:100%}.hero{border-color:#999}.logo{width:120px}h1{text-shadow:none;color:#111}}
-.finished-photo-section{display:grid;grid-template-columns:minmax(0,.82fr) minmax(360px,1.18fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#e2fff4 48%,#fff5bd);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15)}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.12rem;line-height:1.45;color:#67466c}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.logo{width:min(330px,38vw);max-width:100%;border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}@media(max-width:720px){.finished-photo-section{grid-template-columns:1fr}.finished-photo{max-width:520px;margin:auto}.hero{grid-template-columns:1fr}.logo{width:min(420px,100%);margin:auto}}@media print{.finished-photo-section{break-inside:avoid;box-shadow:none}}
-
-
-/* Nath image enhancement pass: polished previews, no mascot recolour. */
-.logo,.finished-photo{filter:saturate(1.05) contrast(1.035) brightness(1.015);object-fit:cover;object-position:center;transition:transform .22s ease, filter .22s ease;}
-.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.1) contrast(1.05) brightness(1.025);}
-.finished-photo-section{position:relative;overflow:hidden;}
-.finished-photo-section:after{content:"✨ aperçu amélioré";position:absolute;right:22px;top:18px;background:#fff65c;border:2px solid #53138f;border-radius:999px;padding:6px 10px;font-weight:950;color:#53138f;box-shadow:0 5px 0 rgba(83,19,143,.1);}
-html:lang(fr) .finished-photo-section:after{content:"✨ aperçu amélioré";}
-@media print{.finished-photo-section:after{display:none}.logo,.finished-photo{filter:none}}
-
-@media(max-width:560px){
-  .actions{flex-direction:column;}
-  .actions a{width:100%;text-align:center;}
-}
-
-
-/* Nath brighter-shinier-clearer magic pass: brighter printable pages, product-photo only; mascot brand colours untouched. */
-:root{--clear-ink:#261034;--clear-muted:#5f3868;}
-body{
-  color:var(--clear-ink);
-  background:
-    radial-gradient(circle at 8% 6%,rgba(255,246,92,.44),transparent 24%),
-    radial-gradient(circle at 90% 10%,rgba(98,245,208,.30),transparent 24%),
-    radial-gradient(circle at 70% 52%,rgba(255,154,202,.22),transparent 28%),
-    linear-gradient(180deg,#fff8d8 0%,#fffefa 48%,#fff0f8 100%);
-}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 18% 18%,rgba(255,255,255,.95) 0 2px,transparent 3px),radial-gradient(circle at 72% 12%,rgba(255,246,92,.85) 0 2px,transparent 3px),radial-gradient(circle at 88% 72%,rgba(98,245,208,.62) 0 2px,transparent 3px);background-size:300px 300px,390px 390px,350px 350px;opacity:.55;}
-.hero,.finished-photo-section,.box,.callout{
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.9),transparent 22%),linear-gradient(145deg,#fffefa,#fff1f9 42%,#eee5ff 72%,#ddfff8);
-  border-color:color-mix(in srgb,var(--purple) 58%,#fff65c);
-  box-shadow:0 22px 58px rgba(83,19,143,.16),0 0 0 8px rgba(255,246,92,.18),0 0 30px rgba(255,255,255,.62);
-}
-h1,h2,.brand span{text-shadow:0 3px 0 rgba(255,246,92,.7),0 0 16px rgba(255,255,255,.7)}
-p,.lead,li,.print-note{color:var(--clear-muted);font-weight:850;}
-.pill,.meta span,.mini div,.photo-pill,.updated-marker{box-shadow:0 8px 18px rgba(83,19,143,.08),inset 0 1px 0 rgba(255,255,255,.75)}
-.btn,.back,.lang button{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}.btn.primary{background:linear-gradient(135deg,#ff43a0,#9b3dff 58%,#35b7ff);box-shadow:0 9px 0 rgba(83,19,143,.15),0 0 22px rgba(255,79,163,.26)}.btn.secondary,.back{background:linear-gradient(135deg,#fff65c,#fff9af 62%,#e7fff8)}
-.logo,.finished-photo{filter:saturate(1.12) contrast(1.06) brightness(1.035);box-shadow:0 12px 0 rgba(83,19,143,.14),0 26px 44px rgba(83,19,143,.21),0 0 26px rgba(255,246,92,.28)}
-.logo:hover,.finished-photo:hover{filter:saturate(1.18) contrast(1.08) brightness(1.055)}
-@media (prefers-reduced-motion:no-preference){.btn:hover,.back:hover,.lang button:hover{transform:translateY(-2px) scale(1.01)}}
-@media print{body{background:#fff}.hero,.finished-photo-section,.box,.callout{box-shadow:none}.logo,.finished-photo{filter:none}}
-
-
-.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Patrick Hand",cursive;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.updated-marker{display:inline-flex;margin-top:10px;background:#e2fff4;border:2px solid var(--mint);border-radius:999px;padding:6px 10px;font-weight:950;color:#07583f}
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Painted Dot Greeting Card — free printable craft pattern from Team Crafties.">
+<meta name="keywords" content="free crochet pattern, Painted Dot Greeting Card, Team Crafties, craft pattern, printable pattern">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://teamcrafties.com/patterns/painted-dot-greeting-card.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://teamcrafties.com/patterns/painted-dot-greeting-card.html">
+<meta property="og:title" content="Painted Dot Greeting Card — Team Crafties free pattern">
+<meta property="og:description" content="Painted Dot Greeting Card — free printable craft pattern from Team Crafties.">
+<meta property="og:site_name" content="Team Crafties">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Painted Dot Greeting Card — Team Crafties free pattern">
+<meta name="twitter:description" content="Painted Dot Greeting Card — free printable craft pattern from Team Crafties."><title>Painted Dot Greeting Card — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@500;700;900&display=swap');
+:root{--ink:#321441;--muted:#67466c;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--blush:#ffd6e9;--sage:#c7d8b8;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.16)}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Nunito",system-ui,sans-serif;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.18),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.16),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#f7edf8)}
+.wrap{width:min(980px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Nunito",sans-serif;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}
+.hero{background:linear-gradient(145deg,#fffdf8,#fff2fb 44%,#e9ddff);border:4px solid var(--blush);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr minmax(260px,380px);gap:26px;align-items:center}.logo{width:100%;border-radius:34px;border:8px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18);object-fit:cover}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.18rem;line-height:1.6;color:var(--muted);font-weight:800}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.updated-marker{display:inline-flex;margin-top:10px;background:#fff5bd;border:2px solid var(--honey);border-radius:999px;padding:6px 10px;font-weight:950;color:#5f3b00}
+.finished-photo-section{display:grid;grid-template-columns:minmax(0,.86fr) minmax(360px,1.14fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#f3e7ff 48%,#e2fff4);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15);position:relative;overflow:hidden}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.05rem;line-height:1.55;color:var(--muted);font-weight:800}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.02rem;line-height:1.45;color:var(--muted);font-weight:800}.callout{background:#fff5bd;border:3px solid var(--honey);border-radius:28px;padding:18px;font-weight:950;color:#5f3b00;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font-weight:950;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573;font-weight:800}.logo,.finished-photo{filter:saturate(1.08) contrast(1.04) brightness(1.02);transition:transform .22s ease,filter .22s ease}.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.12) contrast(1.06) brightness(1.035)}@media(max-width:760px){.hero,.grid,.finished-photo-section{grid-template-columns:1fr}.logo{max-width:420px;margin:auto}.top{align-items:flex-start}.brand span{font-size:1.8rem}}@media print{body{background:white}.top,.actions,.lang{display:none}.hero,.finished-photo-section,.box,.callout{box-shadow:none;break-inside:avoid}.logo,.finished-photo{filter:none}}
 </style></head><body><div class="wrap">
 <header class="top"><a class="brand" href="../index.html"><img src="../assets/crafties-hippo-logo-192.png" alt="Team Crafties lilac purple hippo mascot" data-en-alt="Team Crafties lilac purple hippo mascot" data-fr-alt="Mascotte hippopotame mauve de Team Crafties"><span>Team Crafties</span></a><div class="top-actions"><a class="back" href="../index.html#library" data-en="← Back to pattern library" data-fr="← Retour à la bibliothèque de patrons">← Back to pattern library</a><div class="lang" aria-label="Language switcher"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div></div></header>
 <main>
-<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Painted Dot Greeting Card" data-fr="Carte de souhaits à points peints">Painted Dot Greeting Card</h1><p class="lead" data-en="Painted Dot Greeting Card Dip a cotton swab in paint and dot a cheerful border or pattern onto a plain card — easy and always lovely." data-fr="Une carte facile et pleine de cœur pour partager un message gentil fait main.">Painted Dot Greeting Card Dip a cotton swab in paint and dot a cheerful border or pattern onto a plain card — easy and always lovely.</p><div class="meta"><span>💌 <span data-en="Cards" data-fr="Cartes">Cards</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Free printable pattern" data-fr="Patron imprimable gratuit">Free printable pattern</span><span data-en="Positive comments only" data-fr="Commentaires positifs seulement">Positive comments only</span></div><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="logo" src="../assets/product-photos/painted-dot-greeting-card.jpg" alt="Enhanced finished Painted Dot Greeting Card project photo preview" data-en-alt="Enhanced finished Painted Dot Greeting Card project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Carte de souhaits à points peints"></section>
-<section class="finished-photo-section" aria-label="Aperçu du projet terminé" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project photo" data-fr="Photo du projet terminé">Photo du projet terminé</span><h2 data-en="Finished project" data-fr="Projet terminé">Projet terminé</h2><p data-en-html="A bigger finished-project photo preview for &lt;strong&gt;Painted Dot Greeting Card&lt;/strong&gt;. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos." data-fr-html="Une grande photo d’aperçu du projet terminé pour &lt;strong&gt;Carte de souhaits à points peints&lt;/strong&gt;. Cet aperçu aide les créateurs à reconnaître le résultat tout de suite; il pourra être remplacé plus tard par de vraies photos de la communauté.">A bigger finished-project photo preview for <strong>Painted Dot Greeting Card</strong>. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos.</p><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="finished-photo" src="../assets/product-photos/painted-dot-greeting-card.jpg" alt="Enhanced finished Painted Dot Greeting Card project photo preview" data-en-alt="Enhanced finished Painted Dot Greeting Card project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Carte de souhaits à points peints"></section>
-<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"><li>Cardstock or folded paper</li><li>Paper scraps</li><li>Glue stick</li><li>Markers</li><li>Optional sticker or label</li></ul></div><div class="box"><h2 data-en="Gentle steps" data-fr="Étapes douces">Gentle steps</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"><li>Fold the card base and smooth the crease.</li><li>Cut or draw one simple front decoration.</li><li>Glue or color the front slowly, keeping space for words.</li><li>Write a short kind message inside.</li><li>Finish your painted dot greeting card with a tiny Team Crafties kindness detail or note.</li></ol></div></section>
-<div class="callout">💜 <span data-en="Kindness twist:" data-fr="Touche de gentillesse :">Kindness twist:</span> <span data-en="Add one tiny Team Crafties kindness detail or note before sharing." data-fr="Remercie quelqu’un pour une petite chose qui a vraiment compté.">Add one tiny Team Crafties kindness detail or note before sharing.</span></div>
-<section class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><div class="mini"><div data-en="Take one tiny step at a time." data-fr="Avance une toute petite étape à la fois.">Take one tiny step at a time.</div><div data-en="Imperfections count as handmade charm." data-fr="Les imperfections font partie du charme fait main.">Imperfections count as handmade charm.</div><div data-en="Share what helped you as a beginner." data-fr="Partage ce qui t’a aidé(e) comme débutant(e).">Share what helped you as a beginner.</div></div><p class="print-note" data-en="This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern." data-fr="Cette page de départ est faite pour être imprimée, sauvegardée ou partagée avec un autre créateur bienveillant. Les vrais partages et commentaires communautaires viendront plus tard; pour l’instant, profite de ce patron douillet de pré-lancement.">This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern.</p></section>
-<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary" href="../index.html#start" data-en="Start Here journey" data-fr="Parcours Commencer ici">Start Here journey</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a></div>
+<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Painted Dot Greeting Card" data-fr="Carte de souhaits à points peints">Painted Dot Greeting Card</h1><p class="lead" data-en="A polished handmade greeting card with a cotton-swab dot border, soft dotted wreath, blank message space, and matching envelope." data-fr="Une carte de souhaits faite main avec bordure de points au coton-tige, couronne pointillée douce, espace vierge et enveloppe assortie.">A polished handmade greeting card with a cotton-swab dot border, soft dotted wreath, blank message space, and matching envelope.</p><div class="meta"><span>💌 <span data-en="Paper craft" data-fr="Papier créatif">Paper craft</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Finished size: A2 folded card" data-fr="Format fini : carte pliée A2">Finished size: A2 folded card</span><span data-en="Flat mail-friendly finish" data-fr="Finition plate pour la poste">Flat mail-friendly finish</span></div><span class="updated-marker" data-en="Professional pattern redo • Station 8" data-fr="Refonte professionnelle • Station 8">Professional pattern redo • Station 8</span></div><img class="logo" src="../assets/product-photos/painted-dot-greeting-card-pro.png?v=professional-redo-20260611" alt="Finished cream painted dot greeting card with dotted border, blank center, kraft envelope, and paint supplies" data-en-alt="Finished cream painted dot greeting card with dotted border, blank center, kraft envelope, and paint supplies" data-fr-alt="Carte de souhaits crème terminée avec bordure de points peints, centre vierge, enveloppe kraft et matériel de peinture"></section>
+<section class="finished-photo-section" aria-label="Finished product preview" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project" data-fr="Projet terminé">Finished project</span><h2 data-en="The look we are making" data-fr="Le résultat que nous faisons">The look we are making</h2><p data-en-html="This professional version turns the starter idea into a clean handmade card: &lt;strong&gt;even dot spacing, a soft repeated colour palette, a blank center for your message, and a flat envelope-ready finish&lt;/strong&gt;. The secret is testing the dot size first and letting each colour dry before adding the next layer." data-fr-html="Cette version professionnelle transforme l’idée de départ en carte faite main soignée : &lt;strong&gt;points réguliers, palette douce répétée, centre vierge pour le message et finition plate prête pour l’enveloppe&lt;/strong&gt;. Le secret est de tester la taille des points d’abord et de laisser sécher chaque couleur avant d’ajouter la suivante.">This professional version turns the starter idea into a clean handmade card: <strong>even dot spacing, a soft repeated colour palette, a blank center for your message, and a flat envelope-ready finish</strong>. The secret is testing the dot size first and letting each colour dry before adding the next layer.</p><span class="updated-marker" data-en="Finished-project reference" data-fr="Référence du projet terminé">Finished-project reference</span></div><img class="finished-photo" src="../assets/product-photos/painted-dot-greeting-card-pro.png?v=professional-redo-20260611" alt="Close-up of a polished painted dot greeting card with craft paint and cotton swabs" data-en-alt="Close-up of a polished painted dot greeting card with craft paint and cotton swabs" data-fr-alt="Gros plan d’une carte de souhaits à points peints avec peinture et cotons-tiges"></section>
+<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"></ul></div><div class="box"><h2 data-en="Measurements and terms" data-fr="Mesures et termes">Measurements and terms</h2><ul data-en-list="terms" data-fr-list="terms_fr"></ul></div></section>
+<section class="grid"><div class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><ul data-en-list="prep" data-fr-list="prep_fr"></ul></div><div class="box"><h2 data-en="Paint the dot card" data-fr="Peindre la carte à points">Paint the dot card</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"></ol></div></section>
+<section class="grid"><div class="box"><h2 data-en="Finishing the card" data-fr="Finition de la carte">Finishing the card</h2><ul data-en-list="finish" data-fr-list="finish_fr"></ul></div><div class="box"><h2 data-en="Beginner fixes" data-fr="Solutions débutantes">Beginner fixes</h2><ul data-en-list="troubleshooting" data-fr-list="troubleshooting_fr"></ul></div></section>
+<div class="callout">💜 <span data-en="Crafties touch:" data-fr="Touche Crafties :">Crafties touch:</span> <span data-en="Repeat one tiny dot colour on the envelope flap so the card and envelope feel like a thoughtful little set." data-fr="Répète une petite couleur de point sur le rabat de l’enveloppe pour que la carte et l’enveloppe deviennent un bel ensemble.">Repeat one tiny dot colour on the envelope flap so the card and envelope feel like a thoughtful little set.</span></div>
+<section class="box"><h2 data-en="Safety and care" data-fr="Sécurité et entretien">Safety and care</h2><ul data-en-list="safety" data-fr-list="safety_fr"></ul><p class="print-note" data-en="Desk-checked pattern: dot spacing, paint order, drying time, blank message area, envelope finish, and paint-tool safety were tightened to match the new finished card photo." data-fr="Patron vérifié : espacement des points, ordre de peinture, temps de séchage, zone de message vierge, finition de l’enveloppe et sécurité des outils de peinture ont été ajustés pour correspondre à la nouvelle photo de carte terminée.">Desk-checked pattern: dot spacing, paint order, drying time, blank message area, envelope finish, and paint-tool safety were tightened to match the new finished card photo.</p></section>
+<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary pdf-btn" href="javascript:window.print()" onclick="setTimeout(function(){},100)" data-en="Download PDF" data-fr="Télécharger PDF" style="background:#22d7a5;color:#261034;border-color:#22d7a5">Download PDF</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a><a class="btn secondary" href="../assets/product-photos/painted-dot-greeting-card-pro.png?v=professional-redo-20260611" data-en="Open finished image" data-fr="Ouvrir l’image finale">Open finished image</a></div>
 </main><footer data-en="Made with handmade joy by Team Crafties 🦛💜" data-fr="Créé avec une joie faite main par Team Crafties 🦛💜">Made with handmade joy by Team Crafties 🦛💜</footer>
 </div>
 <script>
-const lists = {'materials': ["Cardstock or folded paper", "Paper scraps", "Glue stick", "Markers", "Optional sticker or label"], 'materials_fr': ["Carte vierge ou papier plié", "Crayon et stylo", "Marqueurs, aquarelle ou retailles", "Colle en bâton", "Petit message chaleureux"], 'steps': ["Fold the card base and smooth the crease.", "Cut or draw one simple front decoration.", "Glue or color the front slowly, keeping space for words.", "Write a short kind message inside.", "Finish your painted dot greeting card with a tiny Team Crafties kindness detail or note."], 'steps_fr': ["Plie ou prépare ta carte bien doucement.", "Dessine ou colle l’élément principal au centre.", "Ajoute des couleurs, des petits motifs ou une bordure joyeuse.", "Écris un message court, sincère et chaleureux.", "Laisse sécher au besoin, puis offre la carte avec fierté."]};
+const lists = {
+  "materials": [
+    "One A2 folded cream card or one 8½ x 5½ in / 21.6 x 14 cm cardstock piece folded in half",
+    "Matching A2 envelope or kraft envelope",
+    "Cotton swabs for round dots, plus one small paintbrush for corrections",
+    "Acrylic, gouache, or watercolour paint in 4–6 coordinating colours",
+    "Scrap paper for testing dot size and protecting the table",
+    "Pencil, ruler, small plate or jar lid for tracing an optional wreath guide"
+  ],
+  "materials_fr": [
+    "Une carte crème pliée A2 ou un carton de 8½ x 5½ po / 21,6 x 14 cm plié en deux",
+    "Enveloppe A2 assortie ou enveloppe kraft",
+    "Cotons-tiges pour les points ronds, plus un petit pinceau pour les corrections",
+    "Peinture acrylique, gouache ou aquarelle en 4 à 6 couleurs assorties",
+    "Papier brouillon pour tester la taille des points et protéger la table",
+    "Crayon, règle, petite assiette ou couvercle de pot pour tracer une couronne optionnelle"
+  ],
+  "terms": [
+    "Dot border: a row of small painted dots around the front edges of the card.",
+    "Dotted wreath: a loose circle of dots or tiny teardrop marks that frames the blank center.",
+    "Test dots: practice marks on scrap paper that show how much paint is on the cotton swab.",
+    "Dry layer: paint that no longer feels tacky before another colour overlaps it.",
+    "Flat finish: decorations stay painted-on and low-profile so the card slides into an envelope."
+  ],
+  "terms_fr": [
+    "Bordure de points : une rangée de petits points peints autour du devant de la carte.",
+    "Couronne pointillée : un cercle souple de points ou petites gouttes qui encadre le centre vierge.",
+    "Points d’essai : marques sur papier brouillon pour voir combien de peinture est sur le coton-tige.",
+    "Couche sèche : peinture qui n’est plus collante avant de superposer une autre couleur.",
+    "Finition plate : les décorations restent peintes et peu épaisses pour entrer dans l’enveloppe."
+  ],
+  "prep": [
+    "Fold the card cleanly and press the crease with a spoon or bone folder.",
+    "Choose one calm palette: for example rose, lilac, teal, sage, ochre, and cream.",
+    "Place scrap paper under the card so paint dots can go near the edge without marking the table.",
+    "If making a wreath, trace a very light circle in pencil or use a faint dotted guide you can hide with paint.",
+    "Practice three dots with every colour before touching the card; reload the cotton swab when dots become pale or scratchy."
+  ],
+  "prep_fr": [
+    "Plie la carte proprement et presse le pli avec une cuillère ou un plioir.",
+    "Choisis une palette douce : par exemple rose, lilas, sarcelle, sauge, ocre et crème.",
+    "Place du papier brouillon sous la carte pour peindre près du bord sans tacher la table.",
+    "Pour une couronne, trace un cercle très léger au crayon ou fais un guide pâle que la peinture cachera.",
+    "Teste trois points avec chaque couleur avant la carte; recharge le coton-tige quand les points pâlissent ou grattent."
+  ],
+  "steps": [
+    "Mark a light ¼ in / 6 mm border guide around the card front, or simply use the card edge as your spacing guide.",
+    "Dip one cotton swab into the first paint colour, tap once on scrap paper, then dot the four corners first.",
+    "Add border dots between the corners, spacing them about one cotton-swab width apart so the line feels even but handmade.",
+    "Let the first colour dry for a few minutes, then repeat with the next colours, staggering sizes and leaving small breathing spaces.",
+    "For the wreath, dot around the circle lightly in one colour, then add two or three accent colours without filling the center.",
+    "Use the tiny brush only for small touch-ups; avoid brushing over dots or they will lose their round shape.",
+    "Let the card dry open and flat for at least 20 minutes, then erase any visible pencil guide very gently."
+  ],
+  "steps_fr": [
+    "Marque un guide léger à ¼ po / 6 mm du bord, ou utilise simplement le bord de la carte pour garder l’espacement.",
+    "Trempe un coton-tige dans la première couleur, tape une fois sur le brouillon, puis pointe les quatre coins d’abord.",
+    "Ajoute des points entre les coins, espacés d’environ une largeur de coton-tige pour une ligne régulière mais faite main.",
+    "Laisse sécher la première couleur quelques minutes, puis répète avec les autres couleurs en variant un peu les tailles.",
+    "Pour la couronne, pointe légèrement autour du cercle avec une couleur, puis ajoute deux ou trois couleurs d’accent sans remplir le centre.",
+    "Utilise le petit pinceau seulement pour de mini corrections; évite de brosser les points pour garder leur forme ronde.",
+    "Laisse la carte sécher ouverte et à plat au moins 20 minutes, puis efface très doucement les guides visibles."
+  ],
+  "finish": [
+    "Add one or two tiny dot clusters on the envelope flap so it matches without becoming bulky.",
+    "Keep the inside message area clean; if paint bled through, glue in a thin blank liner sheet.",
+    "Stack the dry card under a clean book for 10 minutes if the paper curled from wet paint.",
+    "Pair the card with the envelope and a small blank insert if you want a gift-ready stationery set.",
+    "Photograph the card in natural light after it is completely dry so the dots look matte and crisp."
+  ],
+  "finish_fr": [
+    "Ajoute un ou deux petits groupes de points sur le rabat de l’enveloppe pour l’assortir sans l’épaissir.",
+    "Garde l’intérieur propre; si la peinture a traversé, colle une fine feuille vierge comme doublure.",
+    "Presse la carte sèche sous un livre propre 10 minutes si le papier a gondolé avec la peinture humide.",
+    "Associe la carte à l’enveloppe et à une petite carte vierge si tu veux un ensemble papeterie prêt à offrir.",
+    "Photographie la carte en lumière naturelle quand elle est bien sèche pour que les points paraissent mats et nets."
+  ],
+  "troubleshooting": [
+    "Dots look blobby: tap the swab on scrap paper first and use less paint.",
+    "Dots look scratchy: reload with a little paint or switch to a fresh cotton swab.",
+    "Border spacing drifted: make the next few dots slightly smaller and treat the handmade rhythm as part of the charm.",
+    "Paint bled through: use thicker cardstock next time, or add a blank liner sheet inside this card.",
+    "Wreath feels too busy: stop before the center fills in; a clean blank center makes the card look calmer and more professional."
+  ],
+  "troubleshooting_fr": [
+    "Les points font des pâtés : tape d’abord le coton-tige sur le brouillon et utilise moins de peinture.",
+    "Les points semblent grattés : recharge un peu de peinture ou prends un coton-tige neuf.",
+    "La bordure se décale : fais les prochains points un peu plus petits et garde le rythme fait main comme charme.",
+    "La peinture traverse : utilise un carton plus épais la prochaine fois, ou ajoute une feuille vierge à l’intérieur.",
+    "La couronne paraît trop chargée : arrête avant de remplir le centre; un centre vierge rend la carte plus calme et professionnelle."
+  ],
+  "safety": [
+    "Use washable or non-toxic craft paint when children are helping, and follow the paint label.",
+    "Protect the table and clothing; acrylic paint can stain fabric and porous surfaces.",
+    "Do not let young children mouth cotton swabs, paint caps, or small supplies.",
+    "Keep water cups away from electronics and wipe spills right away.",
+    "Let the card dry completely before stacking, mailing, or placing it against another paper surface."
+  ],
+  "safety_fr": [
+    "Utilise de la peinture lavable ou non toxique quand des enfants aident, et suis l’étiquette du produit.",
+    "Protège la table et les vêtements; l’acrylique peut tacher les tissus et surfaces poreuses.",
+    "Ne laisse pas les jeunes enfants mettre dans la bouche les cotons-tiges, bouchons de peinture ou petits accessoires.",
+    "Garde les verres d’eau loin des appareils électroniques et essuie les dégâts tout de suite.",
+    "Laisse la carte sécher complètement avant de l’empiler, l’envoyer ou la poser contre un autre papier."
+  ]
+};
 const pageTitles = {en: "Painted Dot Greeting Card — Team Crafties free pattern", fr: "Carte de souhaits à points peints — Patron gratuit Team Crafties"};
 function setLang(lang){
   document.documentElement.lang = lang;
@@ -80,5 +156,5 @@ function setLang(lang){
 document.querySelectorAll('.lang button').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
 setLang(localStorage.getItem('craftiesPatternLang') || localStorage.getItem('craftiesLang') || 'en');
 </script>
-</body>
-</html>
+  <script defer src="../assets/js/analytics.js?v=20260514b"></script>
+</body></html>

@@ -1,66 +1,143 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Washi Tape Frame Card — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
-:root{--ink:#321441;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.18)}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Patrick Hand","Comic Sans MS",cursive;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.22),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.2),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#ffe7f3)}
-.wrap{width:min(920px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}
-.hero{background:linear-gradient(145deg,#fffdf8,#ffe5f4 44%,#e9ddff);border:4px solid var(--rose);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.logo{width:min(210px,34vw);border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.25rem;line-height:1.55;color:#67466c}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.12rem;line-height:1.35}.tip{background:#e2fff4;border:3px solid var(--mint);border-radius:28px;padding:18px;font-weight:950;color:#07583f;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font:950 1.05rem "Patrick Hand",cursive;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573}@media(max-width:720px){.hero,.grid{grid-template-columns:1fr}.logo{width:180px}.top{align-items:flex-start}.brand span{font-size:1.8rem}}@media print{body{background:white}.top,.actions,footer{display:none}.hero,.box,.tip{box-shadow:none}.wrap{width:100%}.hero{border-color:#999}.logo{width:120px}h1{text-shadow:none;color:#111}}
-.finished-photo-section{display:grid;grid-template-columns:minmax(0,.82fr) minmax(360px,1.18fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#e2fff4 48%,#fff5bd);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15)}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.12rem;line-height:1.45;color:#67466c}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.logo{width:min(330px,38vw);max-width:100%;border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}@media(max-width:720px){.finished-photo-section{grid-template-columns:1fr}.finished-photo{max-width:520px;margin:auto}.hero{grid-template-columns:1fr}.logo{width:min(420px,100%);margin:auto}}@media print{.finished-photo-section{break-inside:avoid;box-shadow:none}}
-
-
-/* Nath image enhancement pass: polished previews, no mascot recolour. */
-.logo,.finished-photo{filter:saturate(1.05) contrast(1.035) brightness(1.015);object-fit:cover;object-position:center;transition:transform .22s ease, filter .22s ease;}
-.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.1) contrast(1.05) brightness(1.025);}
-.finished-photo-section{position:relative;overflow:hidden;}
-.finished-photo-section:after{content:"✨ aperçu amélioré";position:absolute;right:22px;top:18px;background:#fff65c;border:2px solid #53138f;border-radius:999px;padding:6px 10px;font-weight:950;color:#53138f;box-shadow:0 5px 0 rgba(83,19,143,.1);}
-html:lang(fr) .finished-photo-section:after{content:"✨ aperçu amélioré";}
-@media print{.finished-photo-section:after{display:none}.logo,.finished-photo{filter:none}}
-
-@media(max-width:560px){
-  .actions{flex-direction:column;}
-  .actions a{width:100%;text-align:center;}
-}
-
-
-/* Nath brighter-shinier-clearer magic pass: brighter printable pages, product-photo only; mascot brand colours untouched. */
-:root{--clear-ink:#261034;--clear-muted:#5f3868;}
-body{
-  color:var(--clear-ink);
-  background:
-    radial-gradient(circle at 8% 6%,rgba(255,246,92,.44),transparent 24%),
-    radial-gradient(circle at 90% 10%,rgba(98,245,208,.30),transparent 24%),
-    radial-gradient(circle at 70% 52%,rgba(255,154,202,.22),transparent 28%),
-    linear-gradient(180deg,#fff8d8 0%,#fffefa 48%,#fff0f8 100%);
-}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 18% 18%,rgba(255,255,255,.95) 0 2px,transparent 3px),radial-gradient(circle at 72% 12%,rgba(255,246,92,.85) 0 2px,transparent 3px),radial-gradient(circle at 88% 72%,rgba(98,245,208,.62) 0 2px,transparent 3px);background-size:300px 300px,390px 390px,350px 350px;opacity:.55;}
-.hero,.finished-photo-section,.box,.callout{
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.9),transparent 22%),linear-gradient(145deg,#fffefa,#fff1f9 42%,#eee5ff 72%,#ddfff8);
-  border-color:color-mix(in srgb,var(--purple) 58%,#fff65c);
-  box-shadow:0 22px 58px rgba(83,19,143,.16),0 0 0 8px rgba(255,246,92,.18),0 0 30px rgba(255,255,255,.62);
-}
-h1,h2,.brand span{text-shadow:0 3px 0 rgba(255,246,92,.7),0 0 16px rgba(255,255,255,.7)}
-p,.lead,li,.print-note{color:var(--clear-muted);font-weight:850;}
-.pill,.meta span,.mini div,.photo-pill,.updated-marker{box-shadow:0 8px 18px rgba(83,19,143,.08),inset 0 1px 0 rgba(255,255,255,.75)}
-.btn,.back,.lang button{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}.btn.primary{background:linear-gradient(135deg,#ff43a0,#9b3dff 58%,#35b7ff);box-shadow:0 9px 0 rgba(83,19,143,.15),0 0 22px rgba(255,79,163,.26)}.btn.secondary,.back{background:linear-gradient(135deg,#fff65c,#fff9af 62%,#e7fff8)}
-.logo,.finished-photo{filter:saturate(1.12) contrast(1.06) brightness(1.035);box-shadow:0 12px 0 rgba(83,19,143,.14),0 26px 44px rgba(83,19,143,.21),0 0 26px rgba(255,246,92,.28)}
-.logo:hover,.finished-photo:hover{filter:saturate(1.18) contrast(1.08) brightness(1.055)}
-@media (prefers-reduced-motion:no-preference){.btn:hover,.back:hover,.lang button:hover{transform:translateY(-2px) scale(1.01)}}
-@media print{body{background:#fff}.hero,.finished-photo-section,.box,.callout{box-shadow:none}.logo,.finished-photo{filter:none}}
-
-
-.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Patrick Hand",cursive;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.updated-marker{display:inline-flex;margin-top:10px;background:#e2fff4;border:2px solid var(--mint);border-radius:999px;padding:6px 10px;font-weight:950;color:#07583f}
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Washi Tape Frame Card — free printable craft pattern from Team Crafties.">
+<meta name="keywords" content="free crochet pattern, Washi Tape Frame Card, Team Crafties, craft pattern, printable pattern">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://teamcrafties.com/patterns/washi-tape-frame-card.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://teamcrafties.com/patterns/washi-tape-frame-card.html">
+<meta property="og:title" content="Washi Tape Frame Card — Team Crafties free pattern">
+<meta property="og:description" content="Washi Tape Frame Card — free printable craft pattern from Team Crafties.">
+<meta property="og:site_name" content="Team Crafties">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Washi Tape Frame Card — Team Crafties free pattern">
+<meta name="twitter:description" content="Washi Tape Frame Card — free printable craft pattern from Team Crafties."><title>Washi Tape Frame Card — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@500;700;900&display=swap');
+:root{--ink:#321441;--muted:#67466c;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--washi:#c99cff;--sage:#90aa82;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.16)}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Nunito",system-ui,sans-serif;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.18),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.16),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#f7edf8)}
+.wrap{width:min(980px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Nunito",sans-serif;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}
+.hero{background:linear-gradient(145deg,#fffdf8,#fff2fb 44%,#e9ddff);border:4px solid var(--washi);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr minmax(260px,380px);gap:26px;align-items:center}.logo{width:100%;border-radius:34px;border:8px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18);object-fit:cover}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.18rem;line-height:1.6;color:var(--muted);font-weight:800}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.updated-marker{display:inline-flex;margin-top:10px;background:#fff5bd;border:2px solid var(--honey);border-radius:999px;padding:6px 10px;font-weight:950;color:#5f3b00}
+.finished-photo-section{display:grid;grid-template-columns:minmax(0,.86fr) minmax(360px,1.14fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#f3e7ff 48%,#e2fff4);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15);position:relative;overflow:hidden}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.05rem;line-height:1.55;color:var(--muted);font-weight:800}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.02rem;line-height:1.45;color:var(--muted);font-weight:800}.callout{background:#fff5bd;border:3px solid var(--honey);border-radius:28px;padding:18px;font-weight:950;color:#5f3b00;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font-weight:950;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573;font-weight:800}.logo,.finished-photo{filter:saturate(1.08) contrast(1.04) brightness(1.02);transition:transform .22s ease,filter .22s ease}.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.12) contrast(1.06) brightness(1.035)}@media(max-width:760px){.hero,.grid,.finished-photo-section{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.top-actions{justify-content:flex-start}}
+@media print{.top,.actions{display:none}body{background:#fff}.hero,.box,.finished-photo-section{box-shadow:none;border-color:#ddd}}
 </style></head><body><div class="wrap">
 <header class="top"><a class="brand" href="../index.html"><img src="../assets/crafties-hippo-logo-192.png" alt="Team Crafties lilac purple hippo mascot" data-en-alt="Team Crafties lilac purple hippo mascot" data-fr-alt="Mascotte hippopotame mauve de Team Crafties"><span>Team Crafties</span></a><div class="top-actions"><a class="back" href="../index.html#library" data-en="← Back to pattern library" data-fr="← Retour à la bibliothèque de patrons">← Back to pattern library</a><div class="lang" aria-label="Language switcher"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div></div></header>
 <main>
-<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Washi Tape Frame Card" data-fr="Carte encadrée au ruban washi">Washi Tape Frame Card</h1><p class="lead" data-en="Washi Tape Frame Card Border a plain card with strips of patterned washi tape for an instant, colourful frame around your message." data-fr="Une carte facile et pleine de cœur pour partager un message gentil fait main.">Washi Tape Frame Card Border a plain card with strips of patterned washi tape for an instant, colourful frame around your message.</p><div class="meta"><span>💌 <span data-en="Cards" data-fr="Cartes">Cards</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Free printable pattern" data-fr="Patron imprimable gratuit">Free printable pattern</span><span data-en="Positive comments only" data-fr="Commentaires positifs seulement">Positive comments only</span></div><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="logo" src="../assets/product-photos/washi-tape-frame-card.jpg" alt="Enhanced finished Washi Tape Frame Card project photo preview" data-en-alt="Enhanced finished Washi Tape Frame Card project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Carte encadrée au ruban washi"></section>
-<section class="finished-photo-section" aria-label="Aperçu du projet terminé" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project photo" data-fr="Photo du projet terminé">Photo du projet terminé</span><h2 data-en="Finished project" data-fr="Projet terminé">Projet terminé</h2><p data-en-html="A bigger finished-project photo preview for &lt;strong&gt;Washi Tape Frame Card&lt;/strong&gt;. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos." data-fr-html="Une grande photo d’aperçu du projet terminé pour &lt;strong&gt;Carte encadrée au ruban washi&lt;/strong&gt;. Cet aperçu aide les créateurs à reconnaître le résultat tout de suite; il pourra être remplacé plus tard par de vraies photos de la communauté.">A bigger finished-project photo preview for <strong>Washi Tape Frame Card</strong>. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos.</p><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="finished-photo" src="../assets/product-photos/washi-tape-frame-card.jpg" alt="Enhanced finished Washi Tape Frame Card project photo preview" data-en-alt="Enhanced finished Washi Tape Frame Card project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Carte encadrée au ruban washi"></section>
-<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"><li>Cardstock or folded paper</li><li>Paper scraps</li><li>Glue stick</li><li>Markers</li><li>Tiny kindness note</li></ul></div><div class="box"><h2 data-en="Gentle steps" data-fr="Étapes douces">Gentle steps</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"><li>Fold the card base and smooth the crease.</li><li>Cut or draw one simple front decoration.</li><li>Glue or color the front slowly, keeping space for words.</li><li>Write a short kind message inside.</li><li>Finish your washi tape frame card with a tiny Team Crafties kindness detail or note.</li></ol></div></section>
-<div class="callout">💜 <span data-en="Kindness twist:" data-fr="Touche de gentillesse :">Kindness twist:</span> <span data-en="Add one tiny Team Crafties kindness detail or note before sharing." data-fr="Remercie quelqu’un pour une petite chose qui a vraiment compté.">Add one tiny Team Crafties kindness detail or note before sharing.</span></div>
-<section class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><div class="mini"><div data-en="Take one tiny step at a time." data-fr="Avance une toute petite étape à la fois.">Take one tiny step at a time.</div><div data-en="Imperfections count as handmade charm." data-fr="Les imperfections font partie du charme fait main.">Imperfections count as handmade charm.</div><div data-en="Share what helped you as a beginner." data-fr="Partage ce qui t’a aidé(e) comme débutant(e).">Share what helped you as a beginner.</div></div><p class="print-note" data-en="This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern." data-fr="Cette page de départ est faite pour être imprimée, sauvegardée ou partagée avec un autre créateur bienveillant. Les vrais partages et commentaires communautaires viendront plus tard; pour l’instant, profite de ce patron douillet de pré-lancement.">This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern.</p></section>
-<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary" href="../index.html#start" data-en="Start Here journey" data-fr="Parcours Commencer ici">Start Here journey</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a></div>
+<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Washi Tape Frame Card" data-fr="Carte encadrée au ruban washi">Washi Tape Frame Card</h1><p class="lead" data-en="A polished handmade greeting card with layered washi tape borders, cream cardstock, a blank center panel, and a matching envelope — simple, flat, and gift-ready." data-fr="Une carte de souhaits soignée avec bordures superposées en ruban washi, carton crème, panneau central vierge et enveloppe assortie — simple, plate et prête à offrir.">A polished handmade greeting card with layered washi tape borders, cream cardstock, a blank center panel, and a matching envelope — simple, flat, and gift-ready.</p><div class="meta"><span>💌 <span data-en="Paper craft" data-fr="Papier créatif">Paper craft</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Finished size: A2 folded card" data-fr="Format fini : carte pliée A2">Finished size: A2 folded card</span><span data-en="Flat mail-friendly finish" data-fr="Finition plate pour la poste">Flat mail-friendly finish</span></div><span class="updated-marker" data-en="Professional pattern redo • Station 6" data-fr="Refonte professionnelle • Station 6">Professional pattern redo • Station 6</span></div><img class="logo" src="../assets/product-photos/washi-tape-frame-card-pro.png?v=professional-redo-20260611" alt="Finished handmade washi tape frame card with layered muted tape border and kraft envelope" data-en-alt="Finished handmade washi tape frame card with layered muted tape border and kraft envelope" data-fr-alt="Carte encadrée au ruban washi terminée avec bordure douce superposée et enveloppe kraft"></section>
+<section class="finished-photo-section" aria-label="Finished product preview" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project" data-fr="Projet terminé">Finished project</span><h2 data-en="The look we are making" data-fr="Le résultat que nous faisons">The look we are making</h2><p data-en-html="This professional version keeps the beginner-friendly idea, but gives it an adult stationery finish: &lt;strong&gt;muted washi tape, clean frame edges, a blank cream center, and a matching kraft envelope&lt;/strong&gt;. The secret is measuring lightly, overlapping tiny corners, and pressing the tape flat." data-fr-html="Cette version professionnelle garde l’idée facile pour débutants, mais lui donne une finition de papeterie adulte : &lt;strong&gt;ruban washi doux, bords de cadre nets, centre crème vierge et enveloppe kraft assortie&lt;/strong&gt;. Le secret est de mesurer légèrement, superposer de tout petits coins et presser le ruban à plat.">This professional version keeps the beginner-friendly idea, but gives it an adult stationery finish: <strong>muted washi tape, clean frame edges, a blank cream center, and a matching kraft envelope</strong>. The secret is measuring lightly, overlapping tiny corners, and pressing the tape flat.</p><span class="updated-marker" data-en="Finished-project reference" data-fr="Référence du projet terminé">Finished-project reference</span></div><img class="finished-photo" src="../assets/product-photos/washi-tape-frame-card-pro.png?v=professional-redo-20260611" alt="Close-up of a polished washi tape frame greeting card" data-en-alt="Close-up of a polished washi tape frame greeting card" data-fr-alt="Gros plan d’une carte de souhaits encadrée au ruban washi"></section>
+<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"></ul></div><div class="box"><h2 data-en="Measurements and terms" data-fr="Mesures et termes">Measurements and terms</h2><ul data-en-list="terms" data-fr-list="terms_fr"></ul></div></section>
+<section class="grid"><div class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><ul data-en-list="prep" data-fr-list="prep_fr"></ul></div><div class="box"><h2 data-en="Make the washi tape frame card" data-fr="Faire la carte encadrée au washi">Make the washi tape frame card</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"></ol></div></section>
+<section class="grid"><div class="box"><h2 data-en="Finishing and envelope" data-fr="Finition et enveloppe">Finishing and envelope</h2><ul data-en-list="finish" data-fr-list="finish_fr"></ul></div><div class="box"><h2 data-en="Beginner fixes" data-fr="Solutions débutantes">Beginner fixes</h2><ul data-en-list="troubleshooting" data-fr-list="troubleshooting_fr"></ul></div></section>
+<div class="callout">💜 <span data-en="Crafties touch:" data-fr="Touche Crafties :">Crafties touch:</span> <span data-en="Use one quiet tape colour from the frame on the envelope flap so the card feels like a tiny handmade set." data-fr="Utilise une couleur douce du cadre sur le rabat de l’enveloppe pour que la carte ressemble à un petit ensemble fait main.">Use one quiet tape colour from the frame on the envelope flap so the card feels like a tiny handmade set.</span></div>
+<section class="box"><h2 data-en="Safety and care" data-fr="Sécurité et entretien">Safety and care</h2><ul data-en-list="safety" data-fr-list="safety_fr"></ul><p class="print-note" data-en="Desk-checked pattern: tape layout, frame measurements, trimming order, flat-mailing finish, and adhesive safety were tightened to match the new finished card photo." data-fr="Patron vérifié : disposition du ruban, mesures du cadre, ordre de coupe, finition plate pour l’envoi et sécurité des adhésifs ont été ajustés pour correspondre à la nouvelle photo du projet terminé.">Desk-checked pattern: tape layout, frame measurements, trimming order, flat-mailing finish, and adhesive safety were tightened to match the new finished card photo.</p></section>
+<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary pdf-btn" href="javascript:window.print()" onclick="setTimeout(function(){},100)" data-en="Download PDF" data-fr="Télécharger PDF" style="background:#22d7a5;color:#261034;border-color:#22d7a5">Download PDF</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a><a class="btn secondary" href="../assets/product-photos/washi-tape-frame-card-pro.png?v=professional-redo-20260611" data-en="Open finished image" data-fr="Ouvrir l’image finale">Open finished image</a></div>
 </main><footer data-en="Made with handmade joy by Team Crafties 🦛💜" data-fr="Créé avec une joie faite main par Team Crafties 🦛💜">Made with handmade joy by Team Crafties 🦛💜</footer>
 </div>
 <script>
-const lists = {'materials': ["Cardstock or folded paper", "Paper scraps", "Glue stick", "Markers", "Tiny kindness note"], 'materials_fr': ["Carte vierge ou papier plié", "Crayon et stylo", "Marqueurs, aquarelle ou retailles", "Colle en bâton", "Petit message chaleureux"], 'steps': ["Fold the card base and smooth the crease.", "Cut or draw one simple front decoration.", "Glue or color the front slowly, keeping space for words.", "Write a short kind message inside.", "Finish your washi tape frame card with a tiny Team Crafties kindness detail or note."], 'steps_fr': ["Plie ou prépare ta carte bien doucement.", "Dessine ou colle l’élément principal au centre.", "Ajoute des couleurs, des petits motifs ou une bordure joyeuse.", "Écris un message court, sincère et chaleureux.", "Laisse sécher au besoin, puis offre la carte avec fierté."]};
+const lists = {
+  "materials": [
+    "Cream A2 folded cardstock and matching kraft envelope",
+    "3–4 washi tape rolls in a muted palette, about 6–8 in / 15–20 cm of each colour",
+    "Ruler, pencil, bone folder or spoon, and a clean cutting mat",
+    "Small scissors or craft knife with adult help",
+    "Scrap paper for testing tape colours and overlap",
+    "Optional: tiny paper heart, flat sticker, or blank center insert"
+  ],
+  "materials_fr": [
+    "Carton crème plié A2 et enveloppe kraft assortie",
+    "3 ou 4 rouleaux de ruban washi dans une palette douce, environ 6 à 8 po / 15 à 20 cm de chaque couleur",
+    "Règle, crayon, plioir ou cuillère et tapis de coupe propre",
+    "Petits ciseaux ou couteau de bricolage avec aide adulte",
+    "Papier brouillon pour tester les couleurs et les superpositions",
+    "Optionnel : petit cœur de papier, autocollant plat ou insert central vierge"
+  ],
+  "terms": [
+    "A2 card: a folded card about 5½ x 4¼ in / 14 x 10.8 cm.",
+    "Frame border: four strips of washi tape that make a neat rectangle on the card front.",
+    "Overlap corner: where one tape strip crosses another; tiny overlaps are stronger than gaps.",
+    "Burnish: rub tape gently with a fingertip, spoon, or bone folder so it sticks smoothly.",
+    "Low-profile finish: decorations stay flat enough to slide into an envelope."
+  ],
+  "terms_fr": [
+    "Carte A2 : carte pliée d’environ 5½ x 4¼ po / 14 x 10,8 cm.",
+    "Cadre : quatre bandes de ruban washi qui forment un rectangle net sur le devant de la carte.",
+    "Coin superposé : endroit où une bande croise l’autre; un petit chevauchement tient mieux qu’un espace.",
+    "Lisser : frotter doucement le ruban avec le doigt, une cuillère ou un plioir pour bien le coller.",
+    "Finition plate : décorations assez plates pour glisser dans une enveloppe."
+  ],
+  "prep": [
+    "Fold and score the card first, then decide whether the frame will sit centered or slightly high on the front.",
+    "Test your washi colours on scrap paper. Layered translucent tape gets darker at the corners.",
+    "Cut the longest strips first so the frame feels intentional instead of patchy.",
+    "If the tape is very sticky, touch it lightly to clean fabric once before placing so it can be lifted if needed.",
+    "Keep the center panel blank unless you are sure the card will not need a handwritten message later."
+  ],
+  "prep_fr": [
+    "Plie et marque la carte d’abord, puis décide si le cadre sera centré ou un peu plus haut sur le devant.",
+    "Teste les couleurs de washi sur un papier brouillon. Le ruban translucide devient plus foncé aux coins superposés.",
+    "Coupe les bandes les plus longues d’abord pour que le cadre semble voulu plutôt que réparé.",
+    "Si le ruban colle beaucoup, touche-le doucement sur un tissu propre avant de le placer pour pouvoir le soulever au besoin.",
+    "Garde le panneau central vierge sauf si tu es certaine de ne pas ajouter de message manuscrit plus tard."
+  ],
+  "steps": [
+    "Place the folded card front-up and lightly mark a rectangle about 3¾ x 2½ in / 9.5 x 6.5 cm, leaving even margins.",
+    "Lay the top tape strip first. Let the ends extend slightly past the pencil corners so the side strips can overlap them.",
+    "Add the bottom strip parallel to the top. Check the open center space before pressing hard.",
+    "Add the left and right side strips, overlapping the top and bottom strips by about ⅛ in / 3 mm.",
+    "Burnish the tape from the center outward to push out bubbles and keep the edges flat.",
+    "Trim any uneven ends with scissors or a craft knife and adult help, cutting away from fingers.",
+    "Add one tiny flat heart, sticker, or blank insert in the center, then press the card under a book for 10–15 minutes."
+  ],
+  "steps_fr": [
+    "Pose la carte pliée devant toi et marque légèrement un rectangle d’environ 3¾ x 2½ po / 9,5 x 6,5 cm en gardant des marges égales.",
+    "Place d’abord la bande du haut. Laisse les bouts dépasser un peu les coins au crayon pour que les bandes de côté les recouvrent.",
+    "Ajoute la bande du bas parallèle à celle du haut. Vérifie l’espace central avant de presser fort.",
+    "Ajoute les bandes gauche et droite, en les superposant sur celles du haut et du bas d’environ ⅛ po / 3 mm.",
+    "Lisse le ruban du centre vers l’extérieur pour enlever les bulles et garder les bords plats.",
+    "Égalise les bouts avec des ciseaux ou un couteau de bricolage avec aide adulte, toujours en coupant loin des doigts.",
+    "Ajoute un petit cœur plat, un autocollant ou un insert vierge au centre, puis presse la carte sous un livre pendant 10 à 15 minutes."
+  ],
+  "finish": [
+    "Erase any visible guide marks only after the tape is fully pressed down.",
+    "Write inside the card after the front is finished so your hand does not wrinkle the border.",
+    "Add a matching washi strip to the envelope flap if the tape sticks well and does not cover the seal area.",
+    "For a set, repeat the same frame layout and change only one tape colour per card.",
+    "Store finished cards flat; washi can lift if it is bent, damp, or rubbed in a busy bag."
+  ],
+  "finish_fr": [
+    "Efface les marques de guide visibles seulement quand le ruban est bien pressé.",
+    "Écris à l’intérieur de la carte après avoir fini le devant pour ne pas froisser le cadre avec ta main.",
+    "Ajoute une bande assortie sur le rabat de l’enveloppe si le ruban colle bien et ne couvre pas la zone de fermeture.",
+    "Pour faire un ensemble, répète le même cadre et change seulement une couleur de ruban par carte.",
+    "Range les cartes terminées à plat; le washi peut se soulever s’il est plié, humide ou frotté dans un sac chargé."
+  ],
+  "troubleshooting": [
+    "Frame looks crooked: lift the last strip slowly, realign with the ruler, and burnish again.",
+    "Tape tears while trimming: cover the rough end with a tiny second layer or cut a fresh strip.",
+    "Corners look bulky: use fewer tape layers or trim the side strips just inside the top and bottom strips.",
+    "Center feels empty: add one flat heart, a tiny paper flower, or a blank cream insert, not a bulky embellishment.",
+    "Tape edge lifts: rub with a clean spoon, then press under a book; add a dot of glue only if needed."
+  ],
+  "troubleshooting_fr": [
+    "Le cadre semble croche : soulève lentement la dernière bande, réaligne avec la règle et lisse de nouveau.",
+    "Le ruban se déchire en coupant : cache le bout rugueux avec une minuscule deuxième couche ou coupe une nouvelle bande.",
+    "Les coins sont trop épais : utilise moins de couches ou coupe les bandes de côté juste à l’intérieur des bandes du haut et du bas.",
+    "Le centre semble vide : ajoute un cœur plat, une petite fleur de papier ou un insert crème vierge, pas une décoration épaisse.",
+    "Un bord de ruban se soulève : frotte avec une cuillère propre, puis presse sous un livre; ajoute un point de colle seulement au besoin."
+  ],
+  "safety": [
+    "Adult help is needed for craft knives, sharp scissors, and any trimming on a cutting mat.",
+    "Do not let young children put washi tape, paper scraps, stickers, or tiny decorations in their mouths.",
+    "Keep tape away from skin if the maker has adhesive sensitivities.",
+    "Avoid bulky gems, pins, wires, or loose glitter on mailed cards.",
+    "This is decorative stationery, not a toy; keep it dry and away from candles or heat."
+  ],
+  "safety_fr": [
+    "L’aide d’un adulte est nécessaire pour les couteaux de bricolage, ciseaux pointus et coupes sur tapis.",
+    "Ne laisse pas les jeunes enfants mettre du ruban washi, des retailles, autocollants ou petites décorations dans la bouche.",
+    "Évite le ruban sur la peau si la personne est sensible aux adhésifs.",
+    "Évite les grosses pierres, épingles, fils métalliques ou paillettes libres sur les cartes envoyées par la poste.",
+    "C’est de la papeterie décorative, pas un jouet; garde-la sèche et loin des chandelles ou de la chaleur."
+  ]
+};
 const pageTitles = {en: "Washi Tape Frame Card — Team Crafties free pattern", fr: "Carte encadrée au ruban washi — Patron gratuit Team Crafties"};
 function setLang(lang){
   document.documentElement.lang = lang;
@@ -80,5 +157,5 @@ function setLang(lang){
 document.querySelectorAll('.lang button').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
 setLang(localStorage.getItem('craftiesPatternLang') || localStorage.getItem('craftiesLang') || 'en');
 </script>
-</body>
-</html>
+  <script defer src="../assets/js/analytics.js?v=20260514b"></script>
+</body></html>

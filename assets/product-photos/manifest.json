@@ -1,5 +1,5 @@
 {
-  "total": 91,
+  "total": 88,
   "version": "photo-polish-2026-05-08",
   "generatedAt": "2026-05-08",
   "generator": "scripts/generate-photos.py",
@@ -7,92 +7,173 @@
   "categories": {
     "Yarn": [
       {
+        "title": "Purple Hippo Amigurumi",
+        "slug": "purple-hippo-amigurumi",
+        "patternPage": "patterns/purple-hippo-amigurumi.html",
+        "file": "assets/product-photos/purple-hippo-amigurumi.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Monaco Pup",
+        "slug": "monaco-pup",
+        "patternPage": "patterns/monaco-pup.html",
+        "file": "assets/product-photos/monaco-pup-card.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "F1 Pup Prestige House",
+        "slug": "monaco-pup-house",
+        "patternPage": "patterns/monaco-pup-house.html",
+        "file": "assets/product-photos/f1-pup-prestige-house.png",
+        "type": "finished-project-png",
+        "version": "f1-pup-prestige-20260607"
+      },
+      {
+        "title": "Champion Bulldog",
+        "slug": "champion-bulldog",
+        "patternPage": "patterns/champion-bulldog.html",
+        "file": "assets/product-photos/champion-bulldog.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "F1 Room Carpet",
+        "slug": "f1-room-carpet",
+        "patternPage": "patterns/f1-room-carpet.html",
+        "file": "assets/product-photos/f1-room-carpet.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "F1 Paw Coasters",
+        "slug": "f1-paw-coasters",
+        "patternPage": "patterns/f1-paw-coasters.html",
+        "file": "assets/product-photos/f1-paw-coasters.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "Racing Flag Garland",
+        "slug": "racing-flag-garland",
+        "patternPage": "patterns/racing-flag-garland.html",
+        "file": "assets/product-photos/racing-flag-garland.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
+        "title": "F1 Yarn Basket",
+        "slug": "f1-yarn-basket",
+        "patternPage": "patterns/f1-yarn-basket.html",
+        "file": "assets/product-photos/f1-yarn-basket.jpg",
+        "type": "photorealistic-jpg",
+        "version": "photo-polish-2026-05-08"
+      },
+      {
         "title": "Chunky Crochet Heart",
         "slug": "chunky-crochet-heart",
         "patternPage": "patterns/chunky-crochet-heart.html",
-        "file": "assets/product-photos/chunky-crochet-heart.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/chunky-crochet-heart-pro.png",
+        "type": "generated-pinterest-png",
+        "version": "chunky-heart-pro-20260612"
       },
       {
         "title": "Beginner Granny Square",
         "slug": "beginner-granny-square",
         "patternPage": "patterns/beginner-granny-square.html",
-        "file": "assets/product-photos/beginner-granny-square.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/beginner-granny-square-pro.png",
+        "type": "generated-pinterest-png",
+        "version": "granny-square-pro-20260612",
+        "alt": "Finished pastel beginner crochet granny square with matching yarn balls and wooden crochet hook"
       },
       {
-        "title": "Soft Yarn Bookmark",
+        "title": "Soft Yarn Tassel Bookmark",
         "slug": "soft-yarn-bookmark",
         "patternPage": "patterns/soft-yarn-bookmark.html",
-        "file": "assets/product-photos/soft-yarn-bookmark.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/soft-yarn-bookmark-pro.png",
+        "type": "generated-pinterest-png",
+        "version": "yarn-bookmark-pro-20260612"
       },
       {
         "title": "Macramé Keychain Loop",
-        "slug": "macrame-keychain-loop",
+        "slug": "macram-keychain-loop",
         "patternPage": "patterns/macram-keychain-loop.html",
-        "file": "assets/product-photos/macrame-keychain-loop.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/macram-keychain-loop-pro.png",
+        "type": "polished-finished-preview-png",
+        "version": "macrame-keychain-pro-20260612",
+        "alt": "Finished cream cotton macramé keychain loop with brass ring, square knots, wrapped finish, and combed fringe"
+      },
+      {
+        "title": "Macramé Wish Bracelet",
+        "slug": "macram-wish-bracelet",
+        "patternPage": "patterns/macram-wish-bracelet.html",
+        "file": "assets/product-photos/macram-wish-bracelet-pro.png",
+        "type": "polished-finished-preview-png",
+        "version": "macrame-wish-pro-20260612",
+        "alt": "Finished cream and pastel macramé wish bracelet with neat square knots, one bead, and adjustable tie ends"
       },
       {
         "title": "Tiny Knit Coaster",
         "slug": "tiny-knit-coaster",
         "patternPage": "patterns/tiny-knit-coaster.html",
-        "file": "assets/product-photos/tiny-knit-coaster.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/tiny-knit-coaster-pro.png",
+        "type": "generated-pinterest-png",
+        "version": "knit-coaster-pro-20260612",
+        "alt": "Finished dusty rose garter-stitch knit coaster beside a ceramic mug with yarn and wooden needles"
       },
       {
         "title": "Pom-Pom Flower",
         "slug": "pom-pom-flower",
         "patternPage": "patterns/pom-pom-flower.html",
-        "file": "assets/product-photos/pom-pom-flower.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/pom-pom-flower-pro.png",
+        "type": "polished-finished-preview-png",
+        "version": "pom-flower-pro-20260612",
+        "alt": "Finished fluffy pink yarn pom-pom flower with wrapped green stem, leaf, and tiny removable gift tag on a warm craft table"
       },
       {
         "title": "Crochet Cup Cozy",
         "slug": "crochet-cup-cozy",
         "patternPage": "patterns/crochet-cup-cozy.html",
-        "file": "assets/product-photos/crochet-cup-cozy.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/crochet-cup-cozy-pro.png",
+        "type": "generated-pinterest-png",
+        "version": "cup-cozy-pro-20260612",
+        "alt": "Finished cream crochet cup cozy on a reusable cup with wooden button, yarn ball, and crochet hook"
       },
       {
         "title": "Crochet Plant Pot Cover",
         "slug": "crochet-plant-pot-cover",
         "patternPage": "patterns/crochet-plant-pot-cover.html",
         "file": "assets/product-photos/crochet-plant-pot-cover.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "type": "nath-real-finished-photo",
+        "version": "plant-pot-cover-pro-20260612",
+        "alt": "Nath’s finished chunky crochet plant pot covers on a sunny windowsill"
       },
       {
         "title": "Braided Yarn Bracelet",
         "slug": "braided-yarn-bracelet",
         "patternPage": "patterns/braided-yarn-bracelet.html",
-        "file": "assets/product-photos/braided-yarn-bracelet.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/braided-yarn-bracelet-pro.png",
+        "type": "polished-finished-preview-png",
+        "version": "braided-bracelet-pro-20260612",
+        "alt": "Finished lavender, cream, and teal braided yarn bracelet with tidy knots and tie ends on a warm craft table"
       },
       {
         "title": "Mini Tassel Garland",
         "slug": "mini-tassel-garland",
         "patternPage": "patterns/mini-tassel-garland.html",
-        "file": "assets/product-photos/mini-tassel-garland.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/mini-tassel-garland-pro.png",
+        "type": "generated-pinterest-png",
+        "version": "mini-tassel-pro-20260612"
       },
       {
         "title": "Simple Yarn Wrapped Letter",
         "slug": "simple-yarn-wrapped-letter",
         "patternPage": "patterns/simple-yarn-wrapped-letter.html",
-        "file": "assets/product-photos/simple-yarn-wrapped-letter.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/simple-yarn-wrapped-letter-pro.png",
+        "type": "polished-finished-preview-png",
+        "version": "yarn-letter-pro-20260612",
+        "alt": "Polished finished yarn-wrapped initial letter with soft yarn colors, tidy corner wraps, and a tiny blank gift tag"
       }
     ],
     "Painting": [
@@ -124,9 +205,9 @@
         "title": "Painted Jar Lantern",
         "slug": "painted-jar-lantern",
         "patternPage": "patterns/painted-jar-lantern.html",
-        "file": "assets/product-photos/painted-jar-lantern.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/painted-jar-lantern-wax.png",
+        "type": "professional-png",
+        "version": "wax-candle-correction-20260611"
       },
       {
         "title": "Ceramic Mug Practice Motif",
@@ -444,23 +525,15 @@
         "title": "Stretch Ring Stack",
         "slug": "stretch-ring-stack",
         "patternPage": "patterns/stretch-ring-stack.html",
-        "file": "assets/product-photos/stretch-ring-stack.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/stretch-ring-stack-pro.png",
+        "type": "professional-png",
+        "version": "ring-stack-pro-20260612"
       },
       {
         "title": "Charm Safety-Pin Brooch",
         "slug": "charm-safety-pin-brooch",
         "patternPage": "patterns/charm-safety-pin-brooch.html",
         "file": "assets/product-photos/charm-safety-pin-brooch.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Macramé Wish Bracelet",
-        "slug": "macrame-wish-bracelet",
-        "patternPage": "patterns/macram-wish-bracelet.html",
-        "file": "assets/product-photos/macrame-wish-bracelet.jpg",
         "type": "photorealistic-jpg",
         "version": "photo-polish-2026-05-08"
       },
@@ -582,9 +655,9 @@
         "title": "Spa Night Gift Sleeve",
         "slug": "spa-night-gift-sleeve",
         "patternPage": "patterns/spa-night-gift-sleeve.html",
-        "file": "assets/product-photos/spa-night-gift-sleeve.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/spa-night-gift-sleeve-wax.png",
+        "type": "professional-png",
+        "version": "wax-candle-correction-20260611"
       }
     ],
     "Candles": [
@@ -592,100 +665,20 @@
         "title": "Cozy Candle Label",
         "slug": "cozy-candle-label",
         "patternPage": "patterns/cozy-candle-label.html",
-        "file": "assets/product-photos/cozy-candle-label.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Safety Gift Tag",
-        "slug": "safety-gift-tag",
-        "patternPage": "patterns/safety-gift-tag.html",
-        "file": "assets/product-photos/safety-gift-tag.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/cozy-candle-label-wax.png",
+        "type": "professional-png",
+        "version": "wax-candle-correction-20260611"
       },
       {
         "title": "Jar Candle Wrap Band",
         "slug": "jar-candle-wrap-band",
         "patternPage": "patterns/jar-candle-wrap-band.html",
-        "file": "assets/product-photos/jar-candle-wrap-band.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Pressed-Flower Jar Collar",
-        "slug": "pressed-flower-jar-collar",
-        "patternPage": "patterns/pressed-flower-jar-collar.html",
-        "file": "assets/product-photos/pressed-flower-jar-collar.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Cozy Scent Name Card",
-        "slug": "cozy-scent-name-card",
-        "patternPage": "patterns/cozy-scent-name-card.html",
-        "file": "assets/product-photos/cozy-scent-name-card.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Tea-Light Paper Tray",
-        "slug": "tea-light-paper-tray",
-        "patternPage": "patterns/tea-light-paper-tray.html",
-        "file": "assets/product-photos/tea-light-paper-tray.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Candle Care Mini Card",
-        "slug": "candle-care-mini-card",
-        "patternPage": "patterns/candle-care-mini-card.html",
-        "file": "assets/product-photos/candle-care-mini-card.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Ribbon-Wrapped Candle Gift",
-        "slug": "ribbon-wrapped-candle-gift",
-        "patternPage": "patterns/ribbon-wrapped-candle-gift.html",
-        "file": "assets/product-photos/ribbon-wrapped-candle-gift.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Seasonal Candle Sticker",
-        "slug": "seasonal-candle-sticker",
-        "patternPage": "patterns/seasonal-candle-sticker.html",
-        "file": "assets/product-photos/seasonal-candle-sticker.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Kindness Glow Gift Set",
-        "slug": "kindness-glow-gift-set",
-        "patternPage": "patterns/kindness-glow-gift-set.html",
-        "file": "assets/product-photos/kindness-glow-gift-set.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
+        "file": "assets/product-photos/jar-candle-wrap-band-wax.png",
+        "type": "professional-png",
+        "version": "wax-candle-correction-20260611"
       }
     ],
     "Cards": [
-      {
-        "title": "Thank-You Flower Card",
-        "slug": "thank-you-flower-card",
-        "patternPage": "patterns/thank-you-flower-card.html",
-        "file": "assets/product-photos/thank-you-flower-card.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Pop-Up Heart Card",
-        "slug": "pop-up-heart-card",
-        "patternPage": "patterns/pop-up-heart-card.html",
-        "file": "assets/product-photos/pop-up-heart-card.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
       {
         "title": "Scrap Paper Rainbow Card",
         "slug": "scrap-paper-rainbow-card",
@@ -739,14 +732,6 @@
         "slug": "painted-dot-greeting-card",
         "patternPage": "patterns/painted-dot-greeting-card.html",
         "file": "assets/product-photos/painted-dot-greeting-card.jpg",
-        "type": "photorealistic-jpg",
-        "version": "photo-polish-2026-05-08"
-      },
-      {
-        "title": "Crafties Welcome Card",
-        "slug": "crafties-welcome-card",
-        "patternPage": "patterns/crafties-welcome-card.html",
-        "file": "assets/product-photos/crafties-welcome-card.jpg",
         "type": "photorealistic-jpg",
         "version": "photo-polish-2026-05-08"
       }

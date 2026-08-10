@@ -1,66 +1,142 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Pressed-Leaf Card — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
-:root{--ink:#321441;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.18)}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Patrick Hand","Comic Sans MS",cursive;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.22),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.2),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#ffe7f3)}
-.wrap{width:min(920px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}
-.hero{background:linear-gradient(145deg,#fffdf8,#ffe5f4 44%,#e9ddff);border:4px solid var(--rose);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.logo{width:min(210px,34vw);border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.25rem;line-height:1.55;color:#67466c}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.12rem;line-height:1.35}.tip{background:#e2fff4;border:3px solid var(--mint);border-radius:28px;padding:18px;font-weight:950;color:#07583f;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font:950 1.05rem "Patrick Hand",cursive;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573}@media(max-width:720px){.hero,.grid{grid-template-columns:1fr}.logo{width:180px}.top{align-items:flex-start}.brand span{font-size:1.8rem}}@media print{body{background:white}.top,.actions,footer{display:none}.hero,.box,.tip{box-shadow:none}.wrap{width:100%}.hero{border-color:#999}.logo{width:120px}h1{text-shadow:none;color:#111}}
-.finished-photo-section{display:grid;grid-template-columns:minmax(0,.82fr) minmax(360px,1.18fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#e2fff4 48%,#fff5bd);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15)}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.12rem;line-height:1.45;color:#67466c}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.logo{width:min(330px,38vw);max-width:100%;border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}@media(max-width:720px){.finished-photo-section{grid-template-columns:1fr}.finished-photo{max-width:520px;margin:auto}.hero{grid-template-columns:1fr}.logo{width:min(420px,100%);margin:auto}}@media print{.finished-photo-section{break-inside:avoid;box-shadow:none}}
-
-
-/* Nath image enhancement pass: polished previews, no mascot recolour. */
-.logo,.finished-photo{filter:saturate(1.05) contrast(1.035) brightness(1.015);object-fit:cover;object-position:center;transition:transform .22s ease, filter .22s ease;}
-.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.1) contrast(1.05) brightness(1.025);}
-.finished-photo-section{position:relative;overflow:hidden;}
-.finished-photo-section:after{content:"✨ aperçu amélioré";position:absolute;right:22px;top:18px;background:#fff65c;border:2px solid #53138f;border-radius:999px;padding:6px 10px;font-weight:950;color:#53138f;box-shadow:0 5px 0 rgba(83,19,143,.1);}
-html:lang(fr) .finished-photo-section:after{content:"✨ aperçu amélioré";}
-@media print{.finished-photo-section:after{display:none}.logo,.finished-photo{filter:none}}
-
-@media(max-width:560px){
-  .actions{flex-direction:column;}
-  .actions a{width:100%;text-align:center;}
-}
-
-
-/* Nath brighter-shinier-clearer magic pass: brighter printable pages, product-photo only; mascot brand colours untouched. */
-:root{--clear-ink:#261034;--clear-muted:#5f3868;}
-body{
-  color:var(--clear-ink);
-  background:
-    radial-gradient(circle at 8% 6%,rgba(255,246,92,.44),transparent 24%),
-    radial-gradient(circle at 90% 10%,rgba(98,245,208,.30),transparent 24%),
-    radial-gradient(circle at 70% 52%,rgba(255,154,202,.22),transparent 28%),
-    linear-gradient(180deg,#fff8d8 0%,#fffefa 48%,#fff0f8 100%);
-}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 18% 18%,rgba(255,255,255,.95) 0 2px,transparent 3px),radial-gradient(circle at 72% 12%,rgba(255,246,92,.85) 0 2px,transparent 3px),radial-gradient(circle at 88% 72%,rgba(98,245,208,.62) 0 2px,transparent 3px);background-size:300px 300px,390px 390px,350px 350px;opacity:.55;}
-.hero,.finished-photo-section,.box,.callout{
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.9),transparent 22%),linear-gradient(145deg,#fffefa,#fff1f9 42%,#eee5ff 72%,#ddfff8);
-  border-color:color-mix(in srgb,var(--purple) 58%,#fff65c);
-  box-shadow:0 22px 58px rgba(83,19,143,.16),0 0 0 8px rgba(255,246,92,.18),0 0 30px rgba(255,255,255,.62);
-}
-h1,h2,.brand span{text-shadow:0 3px 0 rgba(255,246,92,.7),0 0 16px rgba(255,255,255,.7)}
-p,.lead,li,.print-note{color:var(--clear-muted);font-weight:850;}
-.pill,.meta span,.mini div,.photo-pill,.updated-marker{box-shadow:0 8px 18px rgba(83,19,143,.08),inset 0 1px 0 rgba(255,255,255,.75)}
-.btn,.back,.lang button{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}.btn.primary{background:linear-gradient(135deg,#ff43a0,#9b3dff 58%,#35b7ff);box-shadow:0 9px 0 rgba(83,19,143,.15),0 0 22px rgba(255,79,163,.26)}.btn.secondary,.back{background:linear-gradient(135deg,#fff65c,#fff9af 62%,#e7fff8)}
-.logo,.finished-photo{filter:saturate(1.12) contrast(1.06) brightness(1.035);box-shadow:0 12px 0 rgba(83,19,143,.14),0 26px 44px rgba(83,19,143,.21),0 0 26px rgba(255,246,92,.28)}
-.logo:hover,.finished-photo:hover{filter:saturate(1.18) contrast(1.08) brightness(1.055)}
-@media (prefers-reduced-motion:no-preference){.btn:hover,.back:hover,.lang button:hover{transform:translateY(-2px) scale(1.01)}}
-@media print{body{background:#fff}.hero,.finished-photo-section,.box,.callout{box-shadow:none}.logo,.finished-photo{filter:none}}
-
-
-.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Patrick Hand",cursive;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.updated-marker{display:inline-flex;margin-top:10px;background:#e2fff4;border:2px solid var(--mint);border-radius:999px;padding:6px 10px;font-weight:950;color:#07583f}
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Pressed Leaf Card — free printable craft pattern from Team Crafties.">
+<meta name="keywords" content="free crochet pattern, Pressed Leaf Card, Team Crafties, craft pattern, printable pattern">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://teamcrafties.com/patterns/pressed-leaf-card.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://teamcrafties.com/patterns/pressed-leaf-card.html">
+<meta property="og:title" content="Pressed Leaf Card — Team Crafties free pattern">
+<meta property="og:description" content="Pressed Leaf Card — free printable craft pattern from Team Crafties.">
+<meta property="og:site_name" content="Team Crafties">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pressed Leaf Card — Team Crafties free pattern">
+<meta name="twitter:description" content="Pressed Leaf Card — free printable craft pattern from Team Crafties."><title>Pressed-Leaf Card — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@500;700;900&display=swap');
+:root{--ink:#321441;--muted:#67466c;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--leaf:#9f6b2c;--sage:#7b9168;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.16)}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Nunito",system-ui,sans-serif;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.18),transparent 26%),radial-gradient(circle at 86% 12%,rgba(34,215,165,.18),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#f7f1e2)}
+.wrap{width:min(980px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Nunito",sans-serif;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}
+.hero{background:linear-gradient(145deg,#fffdf8,#f4efe3 44%,#e9ddff);border:4px solid var(--sage);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr minmax(260px,380px);gap:26px;align-items:center}.logo{width:100%;border-radius:34px;border:8px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18);object-fit:cover}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.18rem;line-height:1.6;color:var(--muted);font-weight:800}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.updated-marker{display:inline-flex;margin-top:10px;background:#e2fff4;border:2px solid var(--mint);border-radius:999px;padding:6px 10px;font-weight:950;color:#07583f}
+.finished-photo-section{display:grid;grid-template-columns:minmax(0,.86fr) minmax(360px,1.14fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#e2fff4 48%,#fff5bd);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15);position:relative;overflow:hidden}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.05rem;line-height:1.55;color:var(--muted);font-weight:800}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.02rem;line-height:1.45;color:var(--muted);font-weight:800}.callout{background:#e2fff4;border:3px solid var(--mint);border-radius:28px;padding:18px;font-weight:950;color:#07583f;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font-weight:950;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573;font-weight:800}.logo,.finished-photo{filter:saturate(1.08) contrast(1.04) brightness(1.02);transition:transform .22s ease,filter .22s ease}.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.12) contrast(1.06) brightness(1.035)}@media(max-width:760px){.hero,.grid,.finished-photo-section{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.brand span{font-size:1.8rem}.finished-photo{max-width:520px;margin:auto}}@media(max-width:560px){.actions{flex-direction:column}.actions a{width:100%;text-align:center}}@media print{body{background:white}.top,.actions,.lang{display:none}.hero,.finished-photo-section,.box{box-shadow:none}.logo,.finished-photo{filter:none}}
 </style></head><body><div class="wrap">
 <header class="top"><a class="brand" href="../index.html"><img src="../assets/crafties-hippo-logo-192.png" alt="Team Crafties lilac purple hippo mascot" data-en-alt="Team Crafties lilac purple hippo mascot" data-fr-alt="Mascotte hippopotame mauve de Team Crafties"><span>Team Crafties</span></a><div class="top-actions"><a class="back" href="../index.html#library" data-en="← Back to pattern library" data-fr="← Retour à la bibliothèque de patrons">← Back to pattern library</a><div class="lang" aria-label="Language switcher"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div></div></header>
 <main>
-<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Pressed-Leaf Card" data-fr="Carte à feuille pressée">Pressed-Leaf Card</h1><p class="lead" data-en="Pressed-Leaf Card Press a leaf, glue it to card stock, and add a handwritten line — simple, natural, and genuinely beautiful." data-fr="Une carte facile et pleine de cœur pour partager un message gentil fait main.">Pressed-Leaf Card Press a leaf, glue it to card stock, and add a handwritten line — simple, natural, and genuinely beautiful.</p><div class="meta"><span>💌 <span data-en="Cards" data-fr="Cartes">Cards</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Free printable pattern" data-fr="Patron imprimable gratuit">Free printable pattern</span><span data-en="Positive comments only" data-fr="Commentaires positifs seulement">Positive comments only</span></div><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="logo" src="../assets/product-photos/pressed-leaf-card.jpg" alt="Enhanced finished Pressed-Leaf Card project photo preview" data-en-alt="Enhanced finished Pressed-Leaf Card project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Carte à feuille pressée"></section>
-<section class="finished-photo-section" aria-label="Aperçu du projet terminé" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project photo" data-fr="Photo du projet terminé">Photo du projet terminé</span><h2 data-en="Finished project" data-fr="Projet terminé">Projet terminé</h2><p data-en-html="A bigger finished-project photo preview for &lt;strong&gt;Pressed-Leaf Card&lt;/strong&gt;. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos." data-fr-html="Une grande photo d’aperçu du projet terminé pour &lt;strong&gt;Carte à feuille pressée&lt;/strong&gt;. Cet aperçu aide les créateurs à reconnaître le résultat tout de suite; il pourra être remplacé plus tard par de vraies photos de la communauté.">A bigger finished-project photo preview for <strong>Pressed-Leaf Card</strong>. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos.</p><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="finished-photo" src="../assets/product-photos/pressed-leaf-card.jpg" alt="Enhanced finished Pressed-Leaf Card project photo preview" data-en-alt="Enhanced finished Pressed-Leaf Card project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Carte à feuille pressée"></section>
-<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"><li>Cardstock or folded paper</li><li>Paper scraps</li><li>Glue stick</li><li>Markers</li><li>Optional sticker or label</li></ul></div><div class="box"><h2 data-en="Gentle steps" data-fr="Étapes douces">Gentle steps</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"><li>Fold the card base and smooth the crease.</li><li>Cut or draw one simple front decoration.</li><li>Glue or color the front slowly, keeping space for words.</li><li>Write a short kind message inside.</li><li>Finish your pressed-leaf card with a tiny Team Crafties kindness detail or note.</li></ol></div></section>
-<div class="callout">💜 <span data-en="Kindness twist:" data-fr="Touche de gentillesse :">Kindness twist:</span> <span data-en="Add one tiny Team Crafties kindness detail or note before sharing." data-fr="Remercie quelqu’un pour une petite chose qui a vraiment compté.">Add one tiny Team Crafties kindness detail or note before sharing.</span></div>
-<section class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><div class="mini"><div data-en="Take one tiny step at a time." data-fr="Avance une toute petite étape à la fois.">Take one tiny step at a time.</div><div data-en="Imperfections count as handmade charm." data-fr="Les imperfections font partie du charme fait main.">Imperfections count as handmade charm.</div><div data-en="Share what helped you as a beginner." data-fr="Partage ce qui t’a aidé(e) comme débutant(e).">Share what helped you as a beginner.</div></div><p class="print-note" data-en="This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern." data-fr="Cette page de départ est faite pour être imprimée, sauvegardée ou partagée avec un autre créateur bienveillant. Les vrais partages et commentaires communautaires viendront plus tard; pour l’instant, profite de ce patron douillet de pré-lancement.">This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern.</p></section>
-<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary" href="../index.html#start" data-en="Start Here journey" data-fr="Parcours Commencer ici">Start Here journey</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a></div>
+<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Pressed-Leaf Card" data-fr="Carte à feuille pressée">Pressed-Leaf Card</h1><p class="lead" data-en="A polished botanical greeting card with real flat pressed leaves, cream cardstock, a kraft envelope, and careful glue placement so the finish stays delicate and giftable." data-fr="Une carte botanique soignée avec vraies feuilles pressées à plat, carton crème, enveloppe kraft et collage précis pour une finition délicate à offrir.">A polished botanical greeting card with real flat pressed leaves, cream cardstock, a kraft envelope, and careful glue placement so the finish stays delicate and giftable.</p><div class="meta"><span>💌 <span data-en="Paper craft" data-fr="Papier créatif">Paper craft</span></span><span data-en="Difficulty: Beginner+" data-fr="Niveau : Débutant +">Difficulty: Beginner+</span><span data-en="Finished size: A2 folded card" data-fr="Format fini : carte pliée A2">Finished size: A2 folded card</span><span data-en="Pressed botanical guide" data-fr="Guide botanique pressé">Pressed botanical guide</span></div><span class="updated-marker" data-en="Professional pattern redo • Station 5" data-fr="Refonte professionnelle • Station 5">Professional pattern redo • Station 5</span></div><img class="logo" src="../assets/product-photos/pressed-leaf-card-pro.png?v=professional-redo-20260611" alt="Finished handmade pressed-leaf card with flat autumn leaves and kraft envelope" data-en-alt="Finished handmade pressed-leaf card with flat autumn leaves and kraft envelope" data-fr-alt="Carte à feuille pressée terminée avec feuilles d’automne plates et enveloppe kraft"></section>
+<section class="finished-photo-section" aria-label="Finished product preview" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project" data-fr="Projet terminé">Finished project</span><h2 data-en="The look we are making" data-fr="Le résultat que nous faisons">The look we are making</h2><p data-en-html="This professional version turns a simple leaf idea into a calm stationery piece: &lt;strong&gt;real pressed leaves, cream card, tiny hidden glue dots, and a matching kraft envelope&lt;/strong&gt;. The trick is using fully dry leaves and pressing the finished card flat while it dries." data-fr-html="Cette version professionnelle transforme une simple idée de feuille en jolie papeterie calme : &lt;strong&gt;vraies feuilles pressées, carte crème, minuscules points de colle cachés et enveloppe kraft assortie&lt;/strong&gt;. Le secret est d’utiliser des feuilles complètement sèches et de presser la carte finie pendant le séchage.">This professional version turns a simple leaf idea into a calm stationery piece: <strong>real pressed leaves, cream card, tiny hidden glue dots, and a matching kraft envelope</strong>. The trick is using fully dry leaves and pressing the finished card flat while it dries.</p><span class="updated-marker" data-en="Finished-project reference" data-fr="Référence du projet terminé">Finished-project reference</span></div><img class="finished-photo" src="../assets/product-photos/pressed-leaf-card-pro.png?v=professional-redo-20260611" alt="Close-up of a polished pressed-leaf greeting card with flat leaves" data-en-alt="Close-up of a polished pressed-leaf greeting card with flat leaves" data-fr-alt="Gros plan d’une carte de souhaits soignée avec feuilles pressées plates"></section>
+<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"></ul></div><div class="box"><h2 data-en="Measurements and terms" data-fr="Mesures et termes">Measurements and terms</h2><ul data-en-list="terms" data-fr-list="terms_fr"></ul></div></section>
+<section class="grid"><div class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><ul data-en-list="prep" data-fr-list="prep_fr"></ul></div><div class="box"><h2 data-en="Make the pressed-leaf card" data-fr="Faire la carte à feuille pressée">Make the pressed-leaf card</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"></ol></div></section>
+<section class="grid"><div class="box"><h2 data-en="Finishing and envelope" data-fr="Finition et enveloppe">Finishing and envelope</h2><ul data-en-list="finish" data-fr-list="finish_fr"></ul></div><div class="box"><h2 data-en="Beginner fixes" data-fr="Solutions débutantes">Beginner fixes</h2><ul data-en-list="troubleshooting" data-fr-list="troubleshooting_fr"></ul></div></section>
+<div class="callout">💜 <span data-en="Crafties touch:" data-fr="Touche Crafties :">Crafties touch:</span> <span data-en="Choose one tiny leaf that feels like a secret encouragement, then write the kind message inside only after the front is dry." data-fr="Choisis une petite feuille qui ressemble à un encouragement secret, puis écris le message gentil à l’intérieur seulement quand le devant est sec.">Choose one tiny leaf that feels like a secret encouragement, then write the kind message inside only after the front is dry.</span></div>
+<section class="box"><h2 data-en="Safety and care" data-fr="Sécurité et entretien">Safety and care</h2><ul data-en-list="safety" data-fr-list="safety_fr"></ul><p class="print-note" data-en="Desk-checked pattern: leaf dryness, glue placement, card pressing, envelope fit, and plant-safety notes were tightened to match the new finished card photo. Keep everything dry and flat." data-fr="Patron vérifié : séchage des feuilles, placement de la colle, pressage de la carte, enveloppe et sécurité des plantes ont été ajustés pour correspondre à la nouvelle photo du projet terminé. Garde le tout sec et plat.">Desk-checked pattern: leaf dryness, glue placement, card pressing, envelope fit, and plant-safety notes were tightened to match the new finished card photo. Keep everything dry and flat.</p></section>
+<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary pdf-btn" href="javascript:window.print()" onclick="setTimeout(function(){},100)" data-en="Download PDF" data-fr="Télécharger PDF" style="background:#22d7a5;color:#261034;border-color:#22d7a5">Download PDF</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a><a class="btn secondary" href="../assets/product-photos/pressed-leaf-card-pro.png?v=professional-redo-20260611" data-en="Open finished image" data-fr="Ouvrir l’image finale">Open finished image</a></div>
 </main><footer data-en="Made with handmade joy by Team Crafties 🦛💜" data-fr="Créé avec une joie faite main par Team Crafties 🦛💜">Made with handmade joy by Team Crafties 🦛💜</footer>
 </div>
 <script>
-const lists = {'materials': ["Cardstock or folded paper", "Paper scraps", "Glue stick", "Markers", "Optional sticker or label"], 'materials_fr': ["Carte vierge ou papier plié", "Crayon et stylo", "Marqueurs, aquarelle ou retailles", "Colle en bâton", "Petit message chaleureux"], 'steps': ["Fold the card base and smooth the crease.", "Cut or draw one simple front decoration.", "Glue or color the front slowly, keeping space for words.", "Write a short kind message inside.", "Finish your pressed-leaf card with a tiny Team Crafties kindness detail or note."], 'steps_fr': ["Plie ou prépare ta carte bien doucement.", "Dessine ou colle l’élément principal au centre.", "Ajoute des couleurs, des petits motifs ou une bordure joyeuse.", "Écris un message court, sincère et chaleureux.", "Laisse sécher au besoin, puis offre la carte avec fierté."]};
+const lists = {
+  "materials": [
+    "Cream A2 folded cardstock and matching kraft envelope",
+    "2–3 fully dried pressed leaves, thin flowers, or fern pieces",
+    "Acid-free glue dots, tiny dots of tacky glue, or a glue pen",
+    "Scrap paper, tweezers, ruler, pencil, and bone folder or spoon",
+    "Optional: vellum window, thin paper frame, or clear self-adhesive book film",
+    "Heavy book and clean parchment paper for pressing while it dries"
+  ],
+  "materials_fr": [
+    "Carton crème plié A2 et enveloppe kraft assortie",
+    "2 ou 3 feuilles, petites fleurs ou morceaux de fougère bien séchés et pressés",
+    "Points de colle sans acide, minuscules points de colle forte ou stylo-colle",
+    "Papier brouillon, pince fine, règle, crayon et plioir ou cuillère",
+    "Optionnel : fenêtre de vélin, cadre de papier mince ou film autocollant transparent",
+    "Gros livre et papier parchemin propre pour presser pendant le séchage"
+  ],
+  "terms": [
+    "Pressed leaf: a real leaf dried flat under weight until it is thin and papery.",
+    "A2 card: a folded card about 5½ x 4¼ in / 14 x 10.8 cm.",
+    "Dry fit: arrange every leaf before gluing so the balance feels calm.",
+    "Low-profile finish: decorations stay flat enough for an envelope.",
+    "Acid-free adhesive: glue that helps delicate botanicals stay nicer longer."
+  ],
+  "terms_fr": [
+    "Feuille pressée : vraie feuille séchée à plat sous un poids jusqu’à devenir mince comme du papier.",
+    "Carte A2 : carte pliée d’environ 5½ x 4¼ po / 14 x 10,8 cm.",
+    "Placement à sec : disposer toutes les feuilles avant de coller pour garder un équilibre doux.",
+    "Finition plate : décorations assez plates pour entrer dans une enveloppe.",
+    "Colle sans acide : adhésif qui aide les végétaux délicats à rester beaux plus longtemps."
+  ],
+  "prep": [
+    "Only use leaves that are fully dry. If they feel cool, bendy, or damp, press them longer first.",
+    "Score and fold the card base, then rub the fold with a spoon or bone folder.",
+    "Choose leaves with different shapes and sizes: one hero leaf, one small leaf, and one soft filler piece.",
+    "Place a scrap sheet under the leaves while testing glue so stains do not reach the card front.",
+    "Decide whether the card will be hand-delivered or mailed; mailed cards need the flattest finish."
+  ],
+  "prep_fr": [
+    "Utilise seulement des feuilles complètement sèches. Si elles semblent fraîches, souples ou humides, presse-les plus longtemps.",
+    "Rainure et plie la base de carte, puis frotte le pli avec une cuillère ou un plioir.",
+    "Choisis des feuilles de formes différentes : une feuille vedette, une petite feuille et un accent doux.",
+    "Place une feuille brouillon sous les feuilles pendant les essais de colle pour éviter les taches.",
+    "Décide si la carte sera remise à la main ou envoyée par la poste; pour la poste, garde tout très plat."
+  ],
+  "steps": [
+    "Lay the folded card on the table and lightly mark a quiet center area with pencil if you want a guide.",
+    "Dry-fit the leaves first. Keep the stems pointing in a similar direction and leave breathing room around the edges.",
+    "Pick up one leaf with tweezers, add tiny glue dots behind the stem and a few strong veins, then press it down gently.",
+    "Add the second and third leaves, overlapping only a little so each shape stays visible.",
+    "If using vellum or a paper frame, glue only the ends or corners so the pressed leaves are not crushed by wet glue.",
+    "Cover the card with parchment and place it under a clean book for 20–30 minutes.",
+    "Erase any visible pencil marks, slide the card into its envelope, and keep it flat until gifting."
+  ],
+  "steps_fr": [
+    "Pose la carte pliée sur la table et marque légèrement une zone centrale au crayon si tu veux un guide.",
+    "Place les feuilles à sec d’abord. Garde les tiges dans une direction semblable et laisse de l’espace autour des bords.",
+    "Soulève une feuille avec une pince, ajoute de minuscules points de colle derrière la tige et quelques nervures solides, puis presse doucement.",
+    "Ajoute la deuxième et la troisième feuille en les superposant très peu pour garder chaque forme visible.",
+    "Si tu ajoutes du vélin ou un cadre de papier, colle seulement les extrémités ou les coins pour ne pas écraser les feuilles avec trop de colle.",
+    "Couvre la carte de papier parchemin et place-la sous un livre propre pendant 20 à 30 minutes.",
+    "Efface les traces de crayon visibles, glisse la carte dans son enveloppe et garde-la à plat jusqu’à l’offrir."
+  ],
+  "finish": [
+    "Write the message inside only after the front is dry so your hand does not shift the leaves.",
+    "Add a tiny envelope accent using one flat paper leaf shape if real leaves feel too fragile for the envelope.",
+    "For mailing, protect the front with a piece of parchment inside the envelope and avoid bulky decorations.",
+    "Store extra finished cards flat between two clean sheets of paper.",
+    "For a set, repeat the same cream card and kraft envelope, but change the leaf colours on each card."
+  ],
+  "finish_fr": [
+    "Écris le message à l’intérieur seulement quand le devant est sec pour ne pas déplacer les feuilles avec ta main.",
+    "Ajoute un petit accent sur l’enveloppe avec une feuille de papier plate si les vraies feuilles semblent trop fragiles.",
+    "Pour l’envoi postal, protège le devant avec un papier parchemin dans l’enveloppe et évite les décorations épaisses.",
+    "Range les cartes terminées à plat entre deux feuilles de papier propre.",
+    "Pour faire un ensemble, garde la même carte crème et enveloppe kraft, mais change les couleurs de feuilles sur chaque carte."
+  ],
+  "troubleshooting": [
+    "Leaf cracks while gluing: use the broken piece as a smaller accent or switch to a sturdier pressed leaf.",
+    "Glue shows through: use less glue, place it only behind darker veins, or cover with a small vellum strip.",
+    "Card front curls: press the dry card overnight under a book with parchment above the leaf side.",
+    "Leaves look scattered: line the stems up near one invisible point, like a tiny bouquet.",
+    "Card feels too plain: add a very thin paper border or one tiny heart, but keep the botanical as the star."
+  ],
+  "troubleshooting_fr": [
+    "La feuille casse en collant : utilise le morceau comme petit accent ou choisis une feuille pressée plus solide.",
+    "La colle se voit : mets-en moins, seulement derrière les nervures foncées, ou cache avec une petite bande de vélin.",
+    "Le devant gondole : presse la carte sèche toute la nuit sous un livre avec du parchemin sur le côté feuille.",
+    "Les feuilles semblent éparpillées : aligne les tiges vers un même point invisible, comme un petit bouquet.",
+    "La carte semble trop vide : ajoute une bordure très mince ou un petit cœur, mais laisse le végétal être la vedette."
+  ],
+  "safety": [
+    "Do not use poisonous, irritating, or unknown plants, especially for cards handled by children.",
+    "Some people are sensitive to dried botanicals; avoid scented or dusty plants for public swaps.",
+    "Keep scissors, craft knives, and tweezers away from small children.",
+    "Never press damp leaves directly into a book without protective paper; they can stain or mildew.",
+    "This card is decorative stationery, not a toy, and should be kept dry."
+  ],
+  "safety_fr": [
+    "N’utilise pas de plantes toxiques, irritantes ou inconnues, surtout pour des cartes manipulées par des enfants.",
+    "Certaines personnes sont sensibles aux végétaux séchés; évite les plantes parfumées ou poussiéreuses pour les échanges publics.",
+    "Garde les ciseaux, couteaux de bricolage et pinces loin des jeunes enfants.",
+    "Ne presse jamais des feuilles humides directement dans un livre sans papier protecteur; elles peuvent tacher ou moisir.",
+    "Cette carte est une papeterie décorative, pas un jouet, et doit rester sèche."
+  ]
+};
 const pageTitles = {en: "Pressed-Leaf Card — Team Crafties free pattern", fr: "Carte à feuille pressée — Patron gratuit Team Crafties"};
 function setLang(lang){
   document.documentElement.lang = lang;
@@ -80,5 +156,5 @@ function setLang(lang){
 document.querySelectorAll('.lang button').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
 setLang(localStorage.getItem('craftiesPatternLang') || localStorage.getItem('craftiesLang') || 'en');
 </script>
-</body>
-</html>
+  <script defer src="../assets/js/analytics.js?v=20260514b"></script>
+</body></html>

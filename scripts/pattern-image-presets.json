@@ -1,0 +1,79 @@
+{
+  "version": "2026-06-13",
+  "output_root": ".crafties-toolkit",
+  "brand": {
+    "name": "Team Crafties",
+    "palette": ["#6b3bbf", "#b894ff", "#34d6c3", "#fff2a8", "#ff8ec7"],
+    "tone": "warm, handmade, beginner-friendly, clean enough for printable pattern pages"
+  },
+  "presets": {
+    "realistic-finished-project": {
+      "kind": "fal-image",
+      "label": "Realistic finished craft/project photo",
+      "model": "fal-ai/nano-banana-pro",
+      "best_for": "Finished plush, candle, jewelry, soap, yarn, or craft-table hero images where prompt reasoning matters.",
+      "aspect_ratio": "square",
+      "size_parameter": "aspect_ratio",
+      "sizes": { "landscape": "16:9", "square": "1:1", "portrait": "9:16" },
+      "defaults": { "num_images": 1, "output_format": "png", "safety_tolerance": "5", "resolution": "1K" },
+      "prompt_template": "Create a realistic finished-project photograph for a Team Crafties pattern. Subject: {title}. Craft type: {craft}. Details: {details}. Warm natural light on a cozy craft table, real handmade materials, believable scale, visible texture, soft shadows, no poster text, no watermark, no official logos. Keep it practical and maker-usable, not glossy AI advertising. Team Crafties palette accents: purple, lilac, teal, soft yellow, pink."
+    },
+    "crochet-texture-photo": {
+      "kind": "fal-image",
+      "label": "Crochet/yarn texture-focused photo",
+      "model": "fal-ai/flux-2-pro",
+      "best_for": "Crochet, knitting, macramé, yarn texture, plush or soft goods where material realism matters more than text.",
+      "aspect_ratio": "square",
+      "size_parameter": "image_size",
+      "sizes": { "landscape": "landscape_16_9", "square": "square_hd", "portrait": "portrait_16_9" },
+      "defaults": { "num_inference_steps": 50, "guidance_scale": 4.5, "num_images": 1, "output_format": "png", "enable_safety_checker": false, "safety_tolerance": "5", "sync_mode": true },
+      "prompt_template": "Photorealistic close-up of the finished handmade yarn craft for a Team Crafties pattern: {title}. Craft type: {craft}. Details: {details}. Emphasize real yarn fibers, stitch direction, soft stuffing, natural handmade imperfections, cozy table styling, shallow depth of field, warm daylight. No text, no labels, no watermark, no official logos."
+    },
+    "pattern-cover-recraft": {
+      "kind": "fal-image",
+      "label": "Recraft-style clean pattern cover / branded graphic",
+      "model": "fal-ai/recraft/v4/pro/text-to-image",
+      "best_for": "Pattern covers, printable title cards, clean thumbnails, icons, labels, and branded social graphics.",
+      "aspect_ratio": "square",
+      "size_parameter": "image_size",
+      "sizes": { "landscape": "landscape_16_9", "square": "square_hd", "portrait": "portrait_16_9" },
+      "defaults": { "enable_safety_checker": false, "background_color": { "r": 255, "g": 248, "b": 241 } },
+      "prompt_template": "Design a clean, production-ready Team Crafties pattern cover graphic for: {title}. Craft type: {craft}. Details: {details}. Friendly polished editorial layout, rounded soft shapes, purple/lilac/teal/yellow/pink palette, cute handmade accents, generous whitespace, print-friendly, no tiny unreadable text, no watermark, no official logos. If text is included, keep it short and legible: Team Crafties."
+    },
+    "text-label-graphic": {
+      "kind": "fal-image",
+      "label": "Text/label-heavy image",
+      "model": "fal-ai/ideogram/v3",
+      "best_for": "Short labels, covers with readable words, announcement cards, and social squares.",
+      "aspect_ratio": "square",
+      "size_parameter": "image_size",
+      "sizes": { "landscape": "landscape_16_9", "square": "square_hd", "portrait": "portrait_16_9" },
+      "defaults": { "rendering_speed": "BALANCED", "expand_prompt": true, "style": "AUTO" },
+      "prompt_template": "A polished Team Crafties graphic with clear readable text. Main text: {title}. Supporting idea: {details}. Friendly handmade craft brand, purple hippo-community feeling without copying the mascot unless requested, soft lilac and teal, clean typography, no watermark, no official logos."
+    },
+    "social-square": {
+      "kind": "fal-image",
+      "label": "Square Instagram/Facebook promo graphic",
+      "model": "fal-ai/recraft/v4/pro/text-to-image",
+      "best_for": "Simple shareable social images for a new free pattern or community prompt.",
+      "aspect_ratio": "square",
+      "size_parameter": "image_size",
+      "sizes": { "landscape": "landscape_16_9", "square": "square_hd", "portrait": "portrait_16_9" },
+      "defaults": { "enable_safety_checker": false, "background_color": { "r": 255, "g": 248, "b": 241 } },
+      "prompt_template": "Create a square social media graphic for Team Crafties. Topic: {title}. Craft type: {craft}. Details: {details}. Simple warm composition, one strong image area, one short readable headline, lots of breathing room, cozy handmade palette, friendly not childish, no watermark, no official logos."
+    },
+    "local-pattern-cover-svg": {
+      "kind": "local-cover-svg",
+      "label": "Local clean pattern cover SVG",
+      "best_for": "No-credit, deterministic printable covers and placeholder thumbnails. Useful when paid image backends are blocked.",
+      "aspect_ratio": "square",
+      "prompt_template": "Local Team Crafties cover for {title}. Craft type: {craft}. Details: {details}."
+    },
+    "assembly-diagram-svg": {
+      "kind": "local-svg-diagram",
+      "label": "Deterministic assembly / stitch-step diagram",
+      "best_for": "Exact pattern helper diagrams: pieces, rounds, assembly order, labels, and safety notes. Use this when accuracy matters more than photorealism.",
+      "aspect_ratio": "landscape"
+    }
+  }
+}

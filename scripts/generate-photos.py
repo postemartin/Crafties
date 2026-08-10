@@ -106,16 +106,8 @@ PATTERNS = [
     ("spa-night-gift-sleeve", "a handmade spa gift sleeve with soap candle and bath salts in a cozy bundle, " + BASE_STYLE),
 
     # === CANDLES ===
-    ("cozy-candle-label", "a glass jar candle with a beautiful handmade illustrated label, warm glow, " + BASE_STYLE),
-    ("safety-gift-tag", "a handmade candle safety instruction gift tag tied to a candle jar with ribbon, " + BASE_STYLE),
-    ("jar-candle-wrap-band", "a glass jar candle with a handmade decorative paper band wrap with pressed flowers, " + BASE_STYLE),
-    ("pressed-flower-jar-collar", "a glass candle jar with a handmade pressed flower collar around the top, " + BASE_STYLE),
-    ("cozy-scent-name-card", "a small handmade illustrated scent description card beside a candle, " + BASE_STYLE),
-    ("tea-light-paper-tray", "handmade folded paper origami trays holding tea light candles, soft glow, " + BASE_STYLE),
-    ("candle-care-mini-card", "a tiny handmade candle care instruction mini card with illustrations, " + BASE_STYLE),
-    ("ribbon-wrapped-candle-gift", "a glass jar candle beautifully wrapped with ribbon and a handmade gift tag, " + BASE_STYLE),
-    ("seasonal-candle-sticker", "handmade seasonal illustrated stickers on a candle jar, autumn or winter theme, " + BASE_STYLE),
-    ("kindness-glow-gift-set", "a beautiful handmade candle gift set with cards, dried flowers, and ribbon, " + BASE_STYLE),
+    ("cozy-candle-label", "a real poured wax candle in a heat-safe glass jar with centered cotton wick and removable handmade label, " + BASE_STYLE),
+    ("jar-candle-wrap-band", "a real poured wax candle in a heat-safe jar with centered cotton wick and a removable decorative wrap band below the rim, " + BASE_STYLE),
 
     # === CARDS ===
     ("thank-you-flower-card", "a handmade thank-you greeting card with pressed flowers and hand-lettering, " + BASE_STYLE),

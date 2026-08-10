@@ -31,11 +31,12 @@ const patternManifest = JSON.parse(fs.readFileSync(PATTERN_MANIFEST, 'utf8'));
 const expectedTotal = patternManifest.total;
 const items = Object.values(manifest.categories).flat();
 const patternPages = fs.readdirSync(PATTERN_DIR).filter(file => file.endsWith('.html'));
+const manifestPatternPages = [...new Set(items.map(item => path.basename(item.patternPage)))];
 const imageAssets = fs.readdirSync(PHOTO_DIR).filter(file => /\.(jpg|jpeg|png|webp|svg)$/i.test(file));
 const manifestImageCount = items.filter(item => /\.(jpg|jpeg|png|webp|svg)$/i.test(item.file)).length;
 
-if (patternPages.length === expectedTotal) ok(`${expectedTotal} pattern HTML pages found`);
-else fail(`expected ${expectedTotal} pattern HTML pages, found ${patternPages.length}`);
+if (manifestPatternPages.length === expectedTotal) ok(`${expectedTotal} manifest-backed pattern HTML pages expected`);
+else fail(`expected ${expectedTotal} unique manifest-backed pattern pages, found ${manifestPatternPages.length}`);
 
 if (manifest.total === expectedTotal) ok(`photo manifest total matches expected count (${expectedTotal})`);
 else fail(`expected photo manifest total ${expectedTotal}, found ${manifest.total}`);

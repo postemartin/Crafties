@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400" role="img" aria-labelledby="title desc">
+  <title id="title">Monaco Pup House crochet hero image</title>
+  <desc id="desc">A warm Team Crafties style illustration of the Monaco Pup House: a handmade crochet dog house with red walls, black roof, cream doorway trim, gold edging, and a cozy cushion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f3ed"/>
+      <stop offset="60%" stop-color="#efe4d8"/>
+      <stop offset="100%" stop-color="#ead8c8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="50%">
+      <stop offset="0%" stop-color="#fff6eb" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff6eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d3b296"/>
+      <stop offset="100%" stop-color="#b98f72"/>
+    </linearGradient>
+    <linearGradient id="houseRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8272d"/>
+      <stop offset="100%" stop-color="#aa0f16"/>
+    </linearGradient>
+    <linearGradient id="roofDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f2a2a"/>
+      <stop offset="100%" stop-color="#0f0d10"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1d6"/>
+      <stop offset="100%" stop-color="#edd0ab"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd977"/>
+      <stop offset="50%" stop-color="#d2a63d"/>
+      <stop offset="100%" stop-color="#f4d27d"/>
+    </linearGradient>
+    <linearGradient id="cushion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4b1014"/>
+      <stop offset="100%" stop-color="#23070b"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#5e3421" flood-opacity="0.25"/>
+    </filter>
+    <filter id="blurSmall">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <pattern id="yarnRed" width="26" height="22" patternUnits="userSpaceOnUse">
+      <path d="M2 12 C7 3, 19 3, 24 12" fill="none" stroke="#f35c55" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+      <path d="M2 12 C7 21, 19 21, 24 12" fill="none" stroke="#7f0d12" stroke-width="2.4" stroke-linecap="round" opacity="0.28"/>
+    </pattern>
+    <pattern id="yarnBlack" width="22" height="18" patternUnits="userSpaceOnUse">
+      <path d="M2 9 C6 2, 16 2, 20 9" fill="none" stroke="#666" stroke-width="2.1" stroke-linecap="round" opacity="0.22"/>
+      <path d="M2 9 C6 16, 16 16, 20 9" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round" opacity="0.22"/>
+    </pattern>
+    <pattern id="yarnCream" width="24" height="20" patternUnits="userSpaceOnUse">
+      <path d="M2 10 C7 2, 17 2, 22 10" fill="none" stroke="#fffaf1" stroke-width="2.6" stroke-linecap="round" opacity="0.55"/>
+      <path d="M2 10 C7 18, 17 18, 22 10" fill="none" stroke="#d8b88d" stroke-width="1.7" stroke-linecap="round" opacity="0.35"/>
+    </pattern>
+    <pattern id="cushionTexture" width="28" height="22" patternUnits="userSpaceOnUse">
+      <path d="M3 11 C8 4, 20 4, 25 11" fill="none" stroke="#8e2a31" stroke-width="2.4" stroke-linecap="round" opacity="0.4"/>
+      <path d="M3 11 C8 18, 20 18, 25 11" fill="none" stroke="#28080d" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="1400" fill="url(#bg)"/>
+  <rect width="1400" height="1400" fill="url(#glow)"/>
+
+  <ellipse cx="1120" cy="260" rx="180" ry="140" fill="#ffffff" opacity="0.38" filter="url(#blurSmall)"/>
+  <ellipse cx="260" cy="240" rx="160" ry="120" fill="#ffffff" opacity="0.28" filter="url(#blurSmall)"/>
+  <ellipse cx="1140" cy="1000" rx="220" ry="120" fill="#ffffff" opacity="0.16" filter="url(#blurSmall)"/>
+
+  <rect y="980" width="1400" height="420" fill="url(#floor)"/>
+  <path d="M0 980 C240 935, 490 1010, 700 980 S1150 930, 1400 985 L1400 1400 L0 1400 Z" fill="#f4eee8" opacity="0.92"/>
+  <ellipse cx="700" cy="1085" rx="430" ry="105" fill="#8c5f46" opacity="0.18" filter="url(#blurSmall)"/>
+
+  <g filter="url(#softShadow)">
+    <ellipse cx="700" cy="945" rx="332" ry="82" fill="#191214" opacity="0.18"/>
+
+    <g transform="translate(410 280)">
+      <path d="M165 90 L525 90 C565 90 598 122 598 162 L598 560 L92 560 L92 162 C92 122 125 90 165 90 Z" fill="url(#houseRed)"/>
+      <path d="M165 90 L525 90 C565 90 598 122 598 162 L598 560 L92 560 L92 162 C92 122 125 90 165 90 Z" fill="url(#yarnRed)" opacity="0.88"/>
+
+      <path d="M78 170 L232 46 C249 32 272 24 295 24 L393 24 C416 24 439 32 456 46 L612 170 L560 188 L435 110 C421 101 404 96 387 96 L301 96 C284 96 267 101 253 110 L128 188 Z" fill="url(#roofDark)"/>
+      <path d="M78 170 L232 46 C249 32 272 24 295 24 L393 24 C416 24 439 32 456 46 L612 170 L560 188 L435 110 C421 101 404 96 387 96 L301 96 C284 96 267 101 253 110 L128 188 Z" fill="url(#yarnBlack)" opacity="0.82"/>
+
+      <path d="M145 178 L285 94 C298 86 313 82 328 82 L360 82 C375 82 390 86 403 94 L545 178 L518 505 L372 505 L372 247 C372 219 349 196 321 196 L287 196 C259 196 236 219 236 247 L236 505 L172 505 Z" fill="#121012" opacity="0.65"/>
+      <path d="M145 178 L285 94 C298 86 313 82 328 82 L360 82 C375 82 390 86 403 94 L545 178 L518 505 L372 505 L372 247 C372 219 349 196 321 196 L287 196 C259 196 236 219 236 247 L236 505 L172 505 Z" fill="url(#yarnBlack)" opacity="0.5"/>
+
+      <path d="M210 504 C210 405 210 329 210 260 C210 183 272 122 349 122 C426 122 488 183 488 260 C488 329 488 405 488 504 Z" fill="url(#cream)"/>
+      <path d="M225 504 C225 413 225 340 225 271 C225 201 281 145 350 145 C419 145 475 201 475 271 C475 340 475 413 475 504 Z" fill="url(#houseRed)"/>
+      <path d="M225 504 C225 413 225 340 225 271 C225 201 281 145 350 145 C419 145 475 201 475 271 C475 340 475 413 475 504 Z" fill="url(#yarnRed)" opacity="0.82"/>
+
+      <path d="M202 504 C202 402 202 322 202 252 C202 163 274 91 363 91" fill="none" stroke="url(#gold)" stroke-width="13" stroke-linecap="round"/>
+      <path d="M498 504 C498 402 498 322 498 252 C498 163 426 91 337 91" fill="none" stroke="url(#gold)" stroke-width="13" stroke-linecap="round"/>
+      <path d="M344 74 C425 74 491 140 491 221" fill="none" stroke="url(#gold)" stroke-width="13" stroke-linecap="round"/>
+
+      <ellipse cx="350" cy="522" rx="138" ry="68" fill="#2d0b10"/>
+      <ellipse cx="350" cy="522" rx="138" ry="68" fill="url(#cushionTexture)" opacity="0.9"/>
+      <ellipse cx="350" cy="525" rx="115" ry="50" fill="#b22932" opacity="0.55"/>
+      <ellipse cx="350" cy="533" rx="98" ry="39" fill="#4e1016" opacity="0.72"/>
+
+      <g transform="translate(525 255)">
+        <path d="M0 58 C0 31 21 10 48 10 H78 C105 10 126 31 126 58 V128 H0 Z" fill="#c11724"/>
+        <path d="M0 58 C0 31 21 10 48 10 H78 C105 10 126 31 126 58 V128 H0 Z" fill="url(#yarnRed)" opacity="0.75"/>
+        <path d="M13 21 H113 V91 H13 Z" fill="#f4d6b6" opacity="0.96" rx="10"/>
+        <path d="M38 18 Q43 0 63 0 Q83 0 88 18" fill="none" stroke="#d1a140" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="63" cy="57" r="18" fill="#121012" opacity="0.95"/>
+        <path d="M44 56 L82 56" stroke="#d5ae50" stroke-width="7" stroke-linecap="round"/>
+      </g>
+
+      <g transform="translate(248 66)">
+        <path d="M0 29 C0 13 14 0 31 0 H116 C133 0 147 13 147 29 C147 45 133 58 116 58 H31 C14 58 0 45 0 29 Z" fill="#f6dfbf"/>
+        <path d="M19 12 C4 12 -2 27 2 39 C8 54 26 54 34 44 C40 57 60 58 69 44 C78 58 101 57 108 43 C116 55 138 54 143 37 C147 23 140 11 127 11 H117 C112 4 103 0 93 0 C83 0 75 4 70 11 H79 C74 4 65 0 54 0 C44 0 36 4 31 11 H19 Z" fill="#f6dfbf" opacity="0.95"/>
+        <text x="73.5" y="36" font-size="19" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" fill="#8b1520" font-weight="700">MONACO</text>
+      </g>
+
+      <path d="M92 560 H598" stroke="#d5aa46" stroke-width="10" stroke-linecap="round"/>
+      <path d="M120 560 C120 586 140 610 166 614 H524 C550 610 570 586 570 560" fill="none" stroke="#3a2420" stroke-width="6" opacity="0.25"/>
+    </g>
+  </g>
+
+  <g opacity="0.6">
+    <circle cx="312" cy="1160" r="5" fill="#fff6ef"/>
+    <circle cx="335" cy="1138" r="4" fill="#fff6ef"/>
+    <circle cx="1082" cy="1148" r="5" fill="#fff6ef"/>
+    <circle cx="1051" cy="1172" r="4" fill="#fff6ef"/>
+    <circle cx="1146" cy="1112" r="3.5" fill="#fff6ef"/>
+  </g>
+</svg>

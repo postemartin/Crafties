@@ -1,66 +1,142 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Mini Envelope Set — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
-:root{--ink:#321441;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.18)}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Patrick Hand","Comic Sans MS",cursive;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.22),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.2),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#ffe7f3)}
-.wrap{width:min(920px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}
-.hero{background:linear-gradient(145deg,#fffdf8,#ffe5f4 44%,#e9ddff);border:4px solid var(--rose);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.logo{width:min(210px,34vw);border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.25rem;line-height:1.55;color:#67466c}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.12rem;line-height:1.35}.tip{background:#e2fff4;border:3px solid var(--mint);border-radius:28px;padding:18px;font-weight:950;color:#07583f;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font:950 1.05rem "Patrick Hand",cursive;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573}@media(max-width:720px){.hero,.grid{grid-template-columns:1fr}.logo{width:180px}.top{align-items:flex-start}.brand span{font-size:1.8rem}}@media print{body{background:white}.top,.actions,footer{display:none}.hero,.box,.tip{box-shadow:none}.wrap{width:100%}.hero{border-color:#999}.logo{width:120px}h1{text-shadow:none;color:#111}}
-.finished-photo-section{display:grid;grid-template-columns:minmax(0,.82fr) minmax(360px,1.18fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#e2fff4 48%,#fff5bd);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15)}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.12rem;line-height:1.45;color:#67466c}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.logo{width:min(330px,38vw);max-width:100%;border-radius:34px;border:5px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18)}@media(max-width:720px){.finished-photo-section{grid-template-columns:1fr}.finished-photo{max-width:520px;margin:auto}.hero{grid-template-columns:1fr}.logo{width:min(420px,100%);margin:auto}}@media print{.finished-photo-section{break-inside:avoid;box-shadow:none}}
-
-
-/* Nath image enhancement pass: polished previews, no mascot recolour. */
-.logo,.finished-photo{filter:saturate(1.05) contrast(1.035) brightness(1.015);object-fit:cover;object-position:center;transition:transform .22s ease, filter .22s ease;}
-.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.1) contrast(1.05) brightness(1.025);}
-.finished-photo-section{position:relative;overflow:hidden;}
-.finished-photo-section:after{content:"✨ aperçu amélioré";position:absolute;right:22px;top:18px;background:#fff65c;border:2px solid #53138f;border-radius:999px;padding:6px 10px;font-weight:950;color:#53138f;box-shadow:0 5px 0 rgba(83,19,143,.1);}
-html:lang(fr) .finished-photo-section:after{content:"✨ aperçu amélioré";}
-@media print{.finished-photo-section:after{display:none}.logo,.finished-photo{filter:none}}
-
-@media(max-width:560px){
-  .actions{flex-direction:column;}
-  .actions a{width:100%;text-align:center;}
-}
-
-
-/* Nath brighter-shinier-clearer magic pass: brighter printable pages, product-photo only; mascot brand colours untouched. */
-:root{--clear-ink:#261034;--clear-muted:#5f3868;}
-body{
-  color:var(--clear-ink);
-  background:
-    radial-gradient(circle at 8% 6%,rgba(255,246,92,.44),transparent 24%),
-    radial-gradient(circle at 90% 10%,rgba(98,245,208,.30),transparent 24%),
-    radial-gradient(circle at 70% 52%,rgba(255,154,202,.22),transparent 28%),
-    linear-gradient(180deg,#fff8d8 0%,#fffefa 48%,#fff0f8 100%);
-}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 18% 18%,rgba(255,255,255,.95) 0 2px,transparent 3px),radial-gradient(circle at 72% 12%,rgba(255,246,92,.85) 0 2px,transparent 3px),radial-gradient(circle at 88% 72%,rgba(98,245,208,.62) 0 2px,transparent 3px);background-size:300px 300px,390px 390px,350px 350px;opacity:.55;}
-.hero,.finished-photo-section,.box,.callout{
-  background-image:radial-gradient(circle at 12% 8%,rgba(255,255,255,.9),transparent 22%),linear-gradient(145deg,#fffefa,#fff1f9 42%,#eee5ff 72%,#ddfff8);
-  border-color:color-mix(in srgb,var(--purple) 58%,#fff65c);
-  box-shadow:0 22px 58px rgba(83,19,143,.16),0 0 0 8px rgba(255,246,92,.18),0 0 30px rgba(255,255,255,.62);
-}
-h1,h2,.brand span{text-shadow:0 3px 0 rgba(255,246,92,.7),0 0 16px rgba(255,255,255,.7)}
-p,.lead,li,.print-note{color:var(--clear-muted);font-weight:850;}
-.pill,.meta span,.mini div,.photo-pill,.updated-marker{box-shadow:0 8px 18px rgba(83,19,143,.08),inset 0 1px 0 rgba(255,255,255,.75)}
-.btn,.back,.lang button{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}.btn.primary{background:linear-gradient(135deg,#ff43a0,#9b3dff 58%,#35b7ff);box-shadow:0 9px 0 rgba(83,19,143,.15),0 0 22px rgba(255,79,163,.26)}.btn.secondary,.back{background:linear-gradient(135deg,#fff65c,#fff9af 62%,#e7fff8)}
-.logo,.finished-photo{filter:saturate(1.12) contrast(1.06) brightness(1.035);box-shadow:0 12px 0 rgba(83,19,143,.14),0 26px 44px rgba(83,19,143,.21),0 0 26px rgba(255,246,92,.28)}
-.logo:hover,.finished-photo:hover{filter:saturate(1.18) contrast(1.08) brightness(1.055)}
-@media (prefers-reduced-motion:no-preference){.btn:hover,.back:hover,.lang button:hover{transform:translateY(-2px) scale(1.01)}}
-@media print{body{background:#fff}.hero,.finished-photo-section,.box,.callout{box-shadow:none}.logo,.finished-photo{filter:none}}
-
-
-.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Patrick Hand",cursive;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.updated-marker{display:inline-flex;margin-top:10px;background:#e2fff4;border:2px solid var(--mint);border-radius:999px;padding:6px 10px;font-weight:950;color:#07583f}
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Mini Envelope Set — free printable craft pattern from Team Crafties.">
+<meta name="keywords" content="free crochet pattern, Mini Envelope Set, Team Crafties, craft pattern, printable pattern">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://teamcrafties.com/patterns/mini-envelope-set.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://teamcrafties.com/patterns/mini-envelope-set.html">
+<meta property="og:title" content="Mini Envelope Set — Team Crafties free pattern">
+<meta property="og:description" content="Mini Envelope Set — free printable craft pattern from Team Crafties.">
+<meta property="og:site_name" content="Team Crafties">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mini Envelope Set — Team Crafties free pattern">
+<meta name="twitter:description" content="Mini Envelope Set — free printable craft pattern from Team Crafties."><title>Mini Envelope Set — Team Crafties free pattern</title><link rel="icon" type="image/png" href="../assets/crafties-hippo-logo-64.png" /><style>
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@500;700;900&display=swap');
+:root{--ink:#321441;--muted:#67466c;--purple:#9b3dff;--purple-dark:#53138f;--rose:#ff4fa3;--mint:#22d7a5;--honey:#fff65c;--paper:#fff8df;--card:#fffdf8;--blush:#ffd6e9;--sage:#c7d8b8;--line:#e7b867;--shadow:0 20px 50px rgba(83,19,143,.16)}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Nunito",system-ui,sans-serif;background:radial-gradient(circle at 12% 8%,rgba(155,61,255,.18),transparent 26%),radial-gradient(circle at 86% 12%,rgba(255,79,163,.16),transparent 24%),linear-gradient(180deg,var(--paper),#fff 58%,#f7edf8)}
+.wrap{width:min(980px,calc(100% - 30px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;color:var(--purple-dark)}.brand img{width:64px;height:64px;border-radius:50%;border:3px solid var(--honey);object-fit:cover;box-shadow:0 7px 0 rgba(83,19,143,.12)}.brand span{font-family:"Chewy",cursive;font-size:2.2rem;color:var(--honey);text-shadow:0 3px 0 var(--purple-dark),3px 0 0 var(--purple-dark),-3px 0 0 var(--purple-dark),0 -3px 0 var(--purple-dark)}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.back{background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:10px 14px;color:var(--purple-dark);text-decoration:none;font-weight:950;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang{display:flex;gap:6px;background:#fff;border:2px solid var(--purple-dark);border-radius:999px;padding:5px;box-shadow:0 6px 0 rgba(83,19,143,.1)}.lang button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:var(--purple-dark);font:950 .95rem "Nunito",sans-serif;cursor:pointer}.lang button.active{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}
+.hero{background:linear-gradient(145deg,#fffdf8,#fff2fb 44%,#e9ddff);border:4px solid var(--blush);border-radius:38px;padding:26px;box-shadow:var(--shadow),0 0 0 8px rgba(255,246,92,.18);display:grid;grid-template-columns:1fr minmax(260px,380px);gap:26px;align-items:center}.logo{width:100%;border-radius:34px;border:8px solid #fff;box-shadow:0 18px 30px rgba(83,19,143,.18);object-fit:cover}h1{font-family:"Chewy",cursive;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.9;margin:8px 0;color:var(--purple);text-shadow:0 4px 0 var(--honey)}.pill{display:inline-flex;background:var(--honey);border:2px solid var(--purple-dark);border-radius:999px;padding:8px 12px;font-weight:950}.lead{font-size:1.18rem;line-height:1.6;color:var(--muted);font-weight:800}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-weight:900;color:#694b45}.updated-marker{display:inline-flex;margin-top:10px;background:#fff5bd;border:2px solid var(--honey);border-radius:999px;padding:6px 10px;font-weight:950;color:#5f3b00}
+.finished-photo-section{display:grid;grid-template-columns:minmax(0,.86fr) minmax(360px,1.14fr);gap:28px;align-items:center;margin:26px 0;background:linear-gradient(145deg,#fff,#f3e7ff 48%,#e2fff4);border:4px solid var(--mint);border-radius:38px;padding:26px;box-shadow:0 18px 40px rgba(83,19,143,.15);position:relative;overflow:hidden}.finished-photo-section h2{margin:8px 0 8px}.finished-photo-section p{font-size:1.05rem;line-height:1.55;color:var(--muted);font-weight:800}.finished-photo{width:100%;max-width:620px;margin:auto;border-radius:34px;border:8px solid #fff;box-shadow:0 12px 0 rgba(83,19,143,.13),0 26px 44px rgba(83,19,143,.22);background:#fff;display:block}.photo-pill{background:#e2fff4;border-color:var(--mint);color:#07583f}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.box{background:#fff;border:2px dashed rgba(83,19,143,.24);border-radius:28px;padding:20px;box-shadow:0 10px 24px rgba(83,19,143,.08)}h2{font-family:"Chewy",cursive;font-size:2rem;color:var(--purple-dark);margin:0 0 10px}li{margin:8px 0;font-size:1.02rem;line-height:1.45;color:var(--muted);font-weight:800}.callout{background:#fff5bd;border:3px solid var(--honey);border-radius:28px;padding:18px;font-weight:950;color:#5f3b00;margin-bottom:22px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 34px}.btn{border:0;border-radius:999px;padding:13px 18px;font-weight:950;text-decoration:none;cursor:pointer}.primary{background:linear-gradient(135deg,var(--rose),var(--purple));color:#fff}.secondary{background:#fff;border:2px solid var(--purple-dark);color:var(--purple-dark)}footer{padding:24px 0 44px;color:#6f4573}.print-note{font-size:.95rem;color:#6f4573;font-weight:800}.logo,.finished-photo{filter:saturate(1.08) contrast(1.04) brightness(1.02);transition:transform .22s ease,filter .22s ease}.logo:hover,.finished-photo:hover{transform:translateY(-2px) scale(1.01);filter:saturate(1.12) contrast(1.06) brightness(1.035)}@media(max-width:760px){.hero,.grid,.finished-photo-section{grid-template-columns:1fr}.top{align-items:flex-start;flex-wrap:wrap}.brand span{font-size:1.8rem}.finished-photo{max-width:520px}}@media print{.top,.actions{display:none}body{background:#fff}.hero,.box,.finished-photo-section{box-shadow:none;border-color:#ddd}}
 </style></head><body><div class="wrap">
 <header class="top"><a class="brand" href="../index.html"><img src="../assets/crafties-hippo-logo-192.png" alt="Team Crafties lilac purple hippo mascot" data-en-alt="Team Crafties lilac purple hippo mascot" data-fr-alt="Mascotte hippopotame mauve de Team Crafties"><span>Team Crafties</span></a><div class="top-actions"><a class="back" href="../index.html#library" data-en="← Back to pattern library" data-fr="← Retour à la bibliothèque de patrons">← Back to pattern library</a><div class="lang" aria-label="Language switcher"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div></div></header>
 <main>
-<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Mini Envelope Set" data-fr="Ensemble de mini enveloppes">Mini Envelope Set</h1><p class="lead" data-en="Mini Envelope Set Fold and glue small paper squares into a set of matching envelopes — perfect for tiny cards, seeds, or love notes." data-fr="Une carte facile et pleine de cœur pour partager un message gentil fait main.">Mini Envelope Set Fold and glue small paper squares into a set of matching envelopes — perfect for tiny cards, seeds, or love notes.</p><div class="meta"><span>💌 <span data-en="Cards" data-fr="Cartes">Cards</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Free printable pattern" data-fr="Patron imprimable gratuit">Free printable pattern</span><span data-en="Positive comments only" data-fr="Commentaires positifs seulement">Positive comments only</span></div><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="logo" src="../assets/product-photos/mini-envelope-set.jpg" alt="Enhanced finished Mini Envelope Set project photo preview" data-en-alt="Enhanced finished Mini Envelope Set project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Ensemble de mini enveloppes"></section>
-<section class="finished-photo-section" aria-label="Aperçu du projet terminé" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project photo" data-fr="Photo du projet terminé">Photo du projet terminé</span><h2 data-en="Finished project" data-fr="Projet terminé">Projet terminé</h2><p data-en-html="A bigger finished-project photo preview for &lt;strong&gt;Mini Envelope Set&lt;/strong&gt;. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos." data-fr-html="Une grande photo d’aperçu du projet terminé pour &lt;strong&gt;Ensemble de mini enveloppes&lt;/strong&gt;. Cet aperçu aide les créateurs à reconnaître le résultat tout de suite; il pourra être remplacé plus tard par de vraies photos de la communauté.">A bigger finished-project photo preview for <strong>Mini Envelope Set</strong>. This larger starter preview is here so makers can recognize the result right away; it can be replaced later with real community photos.</p><span class="updated-marker" data-en="Photo preview" data-fr="Aperçu photo">Photo preview</span></div><img class="finished-photo" src="../assets/product-photos/mini-envelope-set.jpg" alt="Enhanced finished Mini Envelope Set project photo preview" data-en-alt="Enhanced finished Mini Envelope Set project photo preview" data-fr-alt="Aperçu amélioré du projet terminé : Ensemble de mini enveloppes"></section>
-<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"><li>Cardstock or folded paper</li><li>Paper scraps</li><li>Glue stick</li><li>Markers</li><li>Your favourite colours</li></ul></div><div class="box"><h2 data-en="Gentle steps" data-fr="Étapes douces">Gentle steps</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"><li>Fold the card base and smooth the crease.</li><li>Cut or draw one simple front decoration.</li><li>Glue or color the front slowly, keeping space for words.</li><li>Write a short kind message inside.</li><li>Finish your mini envelope set with a tiny Team Crafties kindness detail or note.</li></ol></div></section>
-<div class="callout">💜 <span data-en="Kindness twist:" data-fr="Touche de gentillesse :">Kindness twist:</span> <span data-en="Add one tiny Team Crafties kindness detail or note before sharing." data-fr="Remercie quelqu’un pour une petite chose qui a vraiment compté.">Add one tiny Team Crafties kindness detail or note before sharing.</span></div>
-<section class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><div class="mini"><div data-en="Take one tiny step at a time." data-fr="Avance une toute petite étape à la fois.">Take one tiny step at a time.</div><div data-en="Imperfections count as handmade charm." data-fr="Les imperfections font partie du charme fait main.">Imperfections count as handmade charm.</div><div data-en="Share what helped you as a beginner." data-fr="Partage ce qui t’a aidé(e) comme débutant(e).">Share what helped you as a beginner.</div></div><p class="print-note" data-en="This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern." data-fr="Cette page de départ est faite pour être imprimée, sauvegardée ou partagée avec un autre créateur bienveillant. Les vrais partages et commentaires communautaires viendront plus tard; pour l’instant, profite de ce patron douillet de pré-lancement.">This starter page is made to print, save, or share with another gentle maker. Full community uploads and comments are coming later; for now, enjoy the cozy launch-preview pattern.</p></section>
-<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary" href="../index.html#start" data-en="Start Here journey" data-fr="Parcours Commencer ici">Start Here journey</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a></div>
+<section class="hero"><div><span class="pill"><span data-en="Free Team Crafties pattern" data-fr="Patron Team Crafties gratuit">Free Team Crafties pattern</span> • <span data-en="Cards" data-fr="Cartes">Cards</span></span><h1 data-en="Mini Envelope Set" data-fr="Ensemble de mini enveloppes">Mini Envelope Set</h1><p class="lead" data-en="A polished set of five handmade mini envelopes with crisp folds, blank insert cards, muted paper, and a flat gift-ready finish." data-fr="Un ensemble soigné de cinq mini enveloppes faites main avec plis nets, cartes vierges, papiers doux et finition plate prête à offrir.">A polished set of five handmade mini envelopes with crisp folds, blank insert cards, muted paper, and a flat gift-ready finish.</p><div class="meta"><span>💌 <span data-en="Paper craft" data-fr="Papier créatif">Paper craft</span></span><span data-en="Difficulty: Beginner" data-fr="Niveau : Débutant">Difficulty: Beginner</span><span data-en="Finished size: 5 mini envelopes" data-fr="Format fini : 5 mini enveloppes">Finished size: 5 mini envelopes</span><span data-en="Flat gift-ready finish" data-fr="Finition plate prête à offrir">Flat gift-ready finish</span></div><span class="updated-marker" data-en="Professional pattern redo • Station 7" data-fr="Refonte professionnelle • Station 7">Professional pattern redo • Station 7</span></div><img class="logo" src="../assets/product-photos/mini-envelope-set-pro.png?v=professional-redo-20260611" alt="Finished handmade mini envelope set with muted folded envelopes and blank insert cards" data-en-alt="Finished handmade mini envelope set with muted folded envelopes and blank insert cards" data-fr-alt="Ensemble de mini enveloppes terminé avec enveloppes pliées douces et cartes vierges"></section>
+<section class="finished-photo-section" aria-label="Finished product preview" data-en-aria="Finished product preview" data-fr-aria="Aperçu du projet terminé"><div><span class="pill photo-pill" data-en="Finished project" data-fr="Projet terminé">Finished project</span><h2 data-en="The look we are making" data-fr="Le résultat que nous faisons">The look we are making</h2><p data-en-html="This professional version turns the starter idea into a coordinated stationery set: &lt;strong&gt;five tiny envelopes, crisp triangular flaps, blank insert cards, and a calm muted palette&lt;/strong&gt;. The secret is folding a test envelope first, gluing only the overlap zones, and pressing the set flat." data-fr-html="Cette version professionnelle transforme l’idée de départ en ensemble de papeterie assorti : &lt;strong&gt;cinq petites enveloppes, rabats triangulaires nets, cartes vierges et palette douce&lt;/strong&gt;. Le secret est de plier une enveloppe d’essai, coller seulement les zones superposées et presser l’ensemble à plat.">This professional version turns the starter idea into a coordinated stationery set: <strong>five tiny envelopes, crisp triangular flaps, blank insert cards, and a calm muted palette</strong>. The secret is folding a test envelope first, gluing only the overlap zones, and pressing the set flat.</p><span class="updated-marker" data-en="Finished-project reference" data-fr="Référence du projet terminé">Finished-project reference</span></div><img class="finished-photo" src="../assets/product-photos/mini-envelope-set-pro.png?v=professional-redo-20260611" alt="Close-up of a polished handmade mini envelope stationery set" data-en-alt="Close-up of a polished handmade mini envelope stationery set" data-fr-alt="Gros plan d’un ensemble soigné de mini enveloppes faites main"></section>
+<section class="grid"><div class="box"><h2 data-en="Materials" data-fr="Matériel">Materials</h2><ul data-en-list="materials" data-fr-list="materials_fr"></ul></div><div class="box"><h2 data-en="Measurements and terms" data-fr="Mesures et termes">Measurements and terms</h2><ul data-en-list="terms" data-fr-list="terms_fr"></ul></div></section>
+<section class="grid"><div class="box"><h2 data-en="Before you start" data-fr="Avant de commencer">Before you start</h2><ul data-en-list="prep" data-fr-list="prep_fr"></ul></div><div class="box"><h2 data-en="Fold the mini envelopes" data-fr="Plier les mini enveloppes">Fold the mini envelopes</h2><ol class="steps" data-en-list="steps" data-fr-list="steps_fr"></ol></div></section>
+<section class="grid"><div class="box"><h2 data-en="Finishing the set" data-fr="Finition de l’ensemble">Finishing the set</h2><ul data-en-list="finish" data-fr-list="finish_fr"></ul></div><div class="box"><h2 data-en="Beginner fixes" data-fr="Solutions débutantes">Beginner fixes</h2><ul data-en-list="troubleshooting" data-fr-list="troubleshooting_fr"></ul></div></section>
+<div class="callout">💜 <span data-en="Crafties touch:" data-fr="Touche Crafties :">Crafties touch:</span> <span data-en="Make one extra blank insert card for every envelope so the set feels useful, generous, and ready for tiny notes." data-fr="Prépare une carte vierge de plus pour chaque enveloppe afin que l’ensemble soit utile, généreux et prêt pour de petits mots.">Make one extra blank insert card for every envelope so the set feels useful, generous, and ready for tiny notes.</span></div>
+<section class="box"><h2 data-en="Safety and care" data-fr="Sécurité et entretien">Safety and care</h2><ul data-en-list="safety" data-fr-list="safety_fr"></ul><p class="print-note" data-en="Desk-checked pattern: envelope fold order, glue zones, insert sizing, flat gift-set finish, and paper-tool safety were tightened to match the new finished mini-envelope photo." data-fr="Patron vérifié : ordre des plis, zones de colle, format des cartes, finition plate de l’ensemble cadeau et sécurité des outils papier ont été ajustés pour correspondre à la nouvelle photo des mini enveloppes.">Desk-checked pattern: envelope fold order, glue zones, insert sizing, flat gift-set finish, and paper-tool safety were tightened to match the new finished mini-envelope photo.</p></section>
+<div class="actions"><a class="btn primary" href="javascript:window.print()" data-en="Print this pattern" data-fr="Imprimer ce patron">Print this pattern</a><a class="btn secondary pdf-btn" href="javascript:window.print()" onclick="setTimeout(function(){},100)" data-en="Download PDF" data-fr="Télécharger PDF" style="background:#22d7a5;color:#261034;border-color:#22d7a5">Download PDF</a><a class="btn secondary" href="../index.html#library" data-en="More free patterns" data-fr="Plus de patrons gratuits">More free patterns</a><a class="btn secondary" href="../assets/product-photos/mini-envelope-set-pro.png?v=professional-redo-20260611" data-en="Open finished image" data-fr="Ouvrir l’image finale">Open finished image</a></div>
 </main><footer data-en="Made with handmade joy by Team Crafties 🦛💜" data-fr="Créé avec une joie faite main par Team Crafties 🦛💜">Made with handmade joy by Team Crafties 🦛💜</footer>
 </div>
 <script>
-const lists = {'materials': ["Cardstock or folded paper", "Paper scraps", "Glue stick", "Markers", "Your favourite colours"], 'materials_fr': ["Carte vierge ou papier plié", "Crayon et stylo", "Marqueurs, aquarelle ou retailles", "Colle en bâton", "Petit message chaleureux"], 'steps': ["Fold the card base and smooth the crease.", "Cut or draw one simple front decoration.", "Glue or color the front slowly, keeping space for words.", "Write a short kind message inside.", "Finish your mini envelope set with a tiny Team Crafties kindness detail or note."], 'steps_fr': ["Plie ou prépare ta carte bien doucement.", "Dessine ou colle l’élément principal au centre.", "Ajoute des couleurs, des petits motifs ou une bordure joyeuse.", "Écris un message court, sincère et chaleureux.", "Laisse sécher au besoin, puis offre la carte avec fierté."]};
+const lists = {
+  "materials": [
+    "Five paper squares, each about 5 x 5 in / 12.5 x 12.5 cm, in muted coordinating colours",
+    "Five blank insert cards, about 2¼ x 1¾ in / 5.7 x 4.5 cm",
+    "Ruler, pencil, bone folder or clean spoon for crisp folds",
+    "Glue stick or thin double-sided tape",
+    "Small scissors or paper trimmer with adult help",
+    "Optional: flat paper seals, tiny paper hearts, or a short piece of twine for bundling"
+  ],
+  "materials_fr": [
+    "Cinq carrés de papier d’environ 5 x 5 po / 12,5 x 12,5 cm, dans des couleurs douces assorties",
+    "Cinq cartes vierges à glisser dedans, environ 2¼ x 1¾ po / 5,7 x 4,5 cm",
+    "Règle, crayon, plioir ou cuillère propre pour des plis nets",
+    "Bâton de colle ou ruban double face mince",
+    "Petits ciseaux ou massicot avec aide adulte",
+    "Optionnel : sceaux de papier plats, petits cœurs de papier ou petit bout de ficelle pour attacher l’ensemble"
+  ],
+  "terms": [
+    "Envelope body: the folded pocket that holds the tiny insert card.",
+    "Flap: the top triangle that folds down to close the envelope.",
+    "Glue zone: only the small overlapping areas on the side and bottom folds — never the pocket opening.",
+    "Burnish: press a fold with a bone folder, spoon, or fingernail so it stays crisp.",
+    "Flat set: a bundle of envelopes with no bulky gems or raised decorations, so they stack neatly."
+  ],
+  "terms_fr": [
+    "Corps de l’enveloppe : la pochette pliée qui tient la petite carte intérieure.",
+    "Rabat : le triangle du haut qui se replie pour fermer l’enveloppe.",
+    "Zone de colle : seulement les petites zones superposées sur les côtés et le bas — jamais l’ouverture de la pochette.",
+    "Marquer le pli : presser avec un plioir, une cuillère ou l’ongle pour que le pli reste net.",
+    "Ensemble plat : un paquet d’enveloppes sans grosses pierres ni décorations épaisses, facile à empiler."
+  ],
+  "prep": [
+    "Pick papers that are pretty on at least one side and not too thick; very heavy cardstock can crack at the folds.",
+    "Cut all five squares before gluing so the set feels intentional and coordinated.",
+    "Make one test envelope from scrap paper first to learn where the glue belongs.",
+    "Keep the insert cards completely blank until the envelopes are dry and pressed.",
+    "If the papers curl, press them under a book for a few minutes before folding."
+  ],
+  "prep_fr": [
+    "Choisis des papiers jolis d’au moins un côté et pas trop épais; un carton très lourd peut craquer aux plis.",
+    "Coupe les cinq carrés avant de coller pour que l’ensemble semble bien assorti.",
+    "Fais une enveloppe d’essai avec du papier brouillon pour apprendre où mettre la colle.",
+    "Garde les cartes intérieures complètement vierges jusqu’à ce que les enveloppes soient sèches et pressées.",
+    "Si les papiers gondolent, presse-les sous un livre quelques minutes avant de plier."
+  ],
+  "steps": [
+    "Place one paper square like a diamond, pretty side down, with one point facing you.",
+    "Fold the left and right points toward the center so they overlap by about ⅛ in / 3 mm, then burnish the folds.",
+    "Fold the bottom point up over the side folds to form the pocket. Check that the insert card can slide in before adding glue.",
+    "Add a thin line of glue only where the bottom flap touches the side flaps. Keep glue away from the pocket opening.",
+    "Fold the top point down to test the flap, then open it again and let the pocket dry flat for a few minutes.",
+    "Repeat for the remaining papers, matching fold direction and pocket height so the set looks tidy together.",
+    "Slide in the blank cards, press the finished envelopes under a book for 10–15 minutes, and stack them by colour."
+  ],
+  "steps_fr": [
+    "Place un carré de papier comme un diamant, beau côté vers le bas, avec une pointe vers toi.",
+    "Plie les pointes gauche et droite vers le centre pour qu’elles se chevauchent d’environ ⅛ po / 3 mm, puis marque les plis.",
+    "Plie la pointe du bas par-dessus les côtés pour former la pochette. Vérifie que la carte intérieure glisse avant de coller.",
+    "Ajoute une ligne mince de colle seulement là où le rabat du bas touche les côtés. Garde la colle loin de l’ouverture.",
+    "Plie la pointe du haut pour tester le rabat, puis rouvre-la et laisse sécher la pochette à plat quelques minutes.",
+    "Répète avec les autres papiers en gardant la même direction de pli et la même hauteur de pochette.",
+    "Glisse les cartes vierges dedans, presse les enveloppes terminées sous un livre 10 à 15 minutes et empile-les par couleur."
+  ],
+  "finish": [
+    "Trim any fuzzy paper corners only after the glue is dry.",
+    "Add one flat paper seal or tiny heart if you want a decorated flap, but keep it low-profile.",
+    "For a gift set, tie the envelopes loosely with twine or slide them into a clear sleeve.",
+    "Use the same paper palette for the insert cards or keep inserts cream for a calm stationery look.",
+    "Store the set flat; bent flaps and damp glue spots can make mini envelopes warp."
+  ],
+  "finish_fr": [
+    "Égalise les coins de papier seulement quand la colle est sèche.",
+    "Ajoute un sceau de papier plat ou un petit cœur si tu veux décorer le rabat, mais garde-le mince.",
+    "Pour offrir l’ensemble, attache les enveloppes doucement avec de la ficelle ou glisse-les dans une pochette transparente.",
+    "Utilise la même palette pour les cartes intérieures ou garde-les crème pour un style papeterie calme.",
+    "Range l’ensemble à plat; les rabats pliés et les zones humides peuvent faire gondoler les mini enveloppes."
+  ],
+  "troubleshooting": [
+    "Envelope will not hold the insert: make the next insert slightly smaller or raise the bottom fold a little less.",
+    "Pocket glued shut: slide scrap paper inside before pressing the glue areas, or use thinner glue lines next time.",
+    "Flaps look uneven: reopen gently, realign the center overlap, and burnish again before gluing.",
+    "Paper cracks at the fold: switch to lighter paper or score the fold first with the back of a butter knife and adult help.",
+    "Set looks mismatched: repeat one colour in every envelope, such as cream inserts or kraft backing, to tie everything together."
+  ],
+  "troubleshooting_fr": [
+    "L’enveloppe ne tient pas la carte : rends la prochaine carte un peu plus petite ou remonte moins le pli du bas.",
+    "La pochette est collée fermée : glisse du papier brouillon dedans avant de presser la colle, ou utilise moins de colle la prochaine fois.",
+    "Les rabats semblent inégaux : rouvre doucement, réaligne le chevauchement au centre et marque encore le pli avant de coller.",
+    "Le papier craque au pli : utilise un papier plus léger ou marque le pli d’abord avec le dos d’un couteau à beurre avec aide adulte.",
+    "L’ensemble semble dépareillé : répète une couleur dans chaque enveloppe, comme les inserts crème ou un papier kraft, pour tout relier."
+  ],
+  "safety": [
+    "Adult help is needed for paper trimmers, craft knives, sharp scissors, and any scoring tool with a hard edge.",
+    "Use glue in a ventilated space and keep caps closed when not in use.",
+    "Do not let young children mouth paper scraps, glue caps, tiny seals, twine, or small decorations.",
+    "Keep decorations flat if the envelopes will be mailed or handled by children.",
+    "These are decorative paper envelopes, not toys; keep them dry and away from candles or heat."
+  ],
+  "safety_fr": [
+    "L’aide d’un adulte est nécessaire pour les massicots, couteaux de bricolage, ciseaux pointus et outils de rainurage durs.",
+    "Utilise la colle dans un endroit aéré et referme les bouchons quand tu ne t’en sers pas.",
+    "Ne laisse pas les jeunes enfants mettre dans la bouche les retailles, bouchons de colle, petits sceaux, ficelle ou décorations.",
+    "Garde les décorations plates si les enveloppes seront envoyées ou manipulées par des enfants.",
+    "Ce sont des enveloppes décoratives en papier, pas des jouets; garde-les au sec et loin des chandelles ou de la chaleur."
+  ]
+};
 const pageTitles = {en: "Mini Envelope Set — Team Crafties free pattern", fr: "Ensemble de mini enveloppes — Patron gratuit Team Crafties"};
 function setLang(lang){
   document.documentElement.lang = lang;
@@ -80,5 +156,5 @@ function setLang(lang){
 document.querySelectorAll('.lang button').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
 setLang(localStorage.getItem('craftiesPatternLang') || localStorage.getItem('craftiesLang') || 'en');
 </script>
-</body>
-</html>
+  <script defer src="../assets/js/analytics.js?v=20260514b"></script>
+</body></html>

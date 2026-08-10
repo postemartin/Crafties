@@ -1,0 +1,22 @@
+node_modules
+.git
+.hermes
+.DS_Store
+
+# Local planning/QA/dev docs — keep out of the public static publish root
+*.md
+docs/
+scripts/
+.hermes_tmp_*
+
+# Local preview and draft pages
+qa-mobile-preview.html
+patterns/*draft*.html
+
+# Generated/back-up image/source artifacts that are not visitor-facing
+**/*backup*/
+**/*backup*
+**/*draft*
+**/*reference-sheet*
+**/*contact-sheet*
+.crafties-toolkit/
